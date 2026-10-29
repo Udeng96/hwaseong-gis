@@ -1,0 +1,246 @@
+.cctv-parent{
+}
+
+.cctv-parent .rct-bare-label .rct-node-icon,
+.map-parent .rct-bare-label .rct-node-icon,
+.iot_map_parent .rct-bare-label .rct-node-icon{
+    display: none;
+}
+
+.cctv-parent .rct-bare-label .rct-title,
+.map-parent .rct-bare-label .rct-title{
+    font-size: 18px;
+    font-weight: 500;
+    color: #b3b7c9;
+
+}
+.iot_map_parent { /*    iot 탭 관련     */
+    font-size: 18px;
+    font-weight: 500;
+    color: #b3b7c9;
+}
+
+/*.iot_map_parent*/
+
+.rct-node-parent .rct-text label input {
+    display: none;
+}
+
+.rct-node-expanded .rct-collapse-btn > svg{
+    transform: rotate(90deg);
+    color: #666bff;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.rct-node-collapsed .rct-collapse-btn >svg{
+    transform: rotate(0deg);
+    color: #666bff;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+
+}
+
+.rct-title{
+    margin-right: 6px;
+}
+
+.cctv-leaf .rct-text{
+    position: relative;
+    margin-top: 12px;
+}
+
+.map-leaf .rct-text{
+    position: relative;
+    margin-top: 15px;
+}
+.iot-map .rct-text{
+    position: relative;
+}
+
+.iot-map .rct-text label{
+}
+
+.iot-map .rct-text label input{
+    display: none;
+}
+
+.rct-node ol li{
+    margin-top: 15px;
+}
+/*.cctv-leaf .rct-text label,*/
+/*.map-leaf .rct-text label,*/
+/*.iot-map .rct-text label{*/
+/*    position: absolute;*/
+/*    left: 26px;*/
+/*    bottom: 0;*/
+/*    !*top: 10px;*!*/
+/*}*/
+
+.iot-map .rct-text .rct-checkbox{
+    position: relative;
+    top: -1px;
+}
+
+.iot-map .rct-text .rct-checkbox:hover{
+    cursor: pointer;
+}
+
+.cctv-leaf .rct-text .rct-checkbox .rct-icon,
+.map-leaf .rct-text .rct-checkbox .rct-icon,
+.iot-map .rct-text .rct-checkbox .rct-icon{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    border-radius: 3px;
+    border: solid 1px #555887;
+    background-color: #333452;
+    margin-right: 10px;
+}
+
+.cctv-leaf .rct-text .rct-checkbox .rct-icon:before,
+.map-leaf .rct-text .rct-checkbox .rct-icon:before,
+.iot-map .rct-text .rct-checkbox .rct-icon:before{
+    /*display: none;*/
+    content: '';
+}
+
+.cctv-leaf .rct-text .rct-checkbox[aria-checked=true] .rct-icon,
+.map-leaf .rct-text .rct-checkbox[aria-checked=true] .rct-icon,
+.iot-map .rct-text .rct-checkbox[aria-checked=true] .rct-icon{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    border-radius: 3px;
+    background-color: #666bff;
+    border-color: #666bff;
+    position: relative;
+}
+
+.cctv-leaf .rct-text .rct-checkbox[aria-checked=true] .rct-icon:before,
+.map-leaf .rct-text .rct-checkbox[aria-checked=true] .rct-icon:before,
+.iot-map .rct-text .rct-checkbox[aria-checked=true] .rct-icon:before{
+    content: "";
+    width: 3px;
+    height: 6px;
+    border: solid #f0f2f5;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg) translateX(-60%);
+    position: absolute;
+    left: 50%;
+    top: 5px;
+}
+
+.cctv-leaf .rct-text .rct-node-icon .rct-icon,
+.map-leaf .rct-text .rct-node-icon .rct-icon,
+.iot-map .rct-text .rct-node-icon .rct-icon{
+    width: 19px;
+    height: 19px;
+    display: inline-block;
+    padding: 0;
+    position: relative;
+    top: 0;
+}
+
+.react-checkbox-tree ol ol {
+    padding-left: 10px;
+}
+
+.cctv-leaf .rct-text .rct-node-icon .rct-icon:before,
+.map-leaf .rct-text .rct-node-icon .rct-icon:before,
+.iot-map .rct-text .rct-node-icon .rct-icon:before{
+    content: '';
+    width: 19px;
+    height: 19px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+}
+.cctv-leaf:nth-child(1) .rct-text .rct-node-icon .rct-icon:before{
+    background: url("../../icon/main/marker/etc/GIS_POI_icons/icon_gis_facility_vms_normal.svg")no-repeat;
+}
+
+.cctv-leaf:nth-child(2) .rct-text .rct-node-icon .rct-icon:before{
+    background: url("../../icon/main/legend/icon_gisSetting_tree_cctv_3_clampdown.png");
+}
+.cctv-leaf:nth-child(4) .rct-text .rct-node-icon .rct-icon:before{
+    background: url("../../icon/main/legend/icon_gisSetting_tree_cctv_4_disaster.png");
+}
+.cctv-leaf:nth-child(3) .rct-text .rct-node-icon .rct-icon:before{
+    background: url("../../icon/main/legend/icon_gisSetting_tree_cctv_5_traffic.png");
+}
+
+.map-leaf:nth-child(1) .rct-text .rct-node-icon .rct-icon:before{
+    background: url("../../icon/main/marker/etc/GIS_POI_icons/icon_gis_facility_vms_normal.svg")no-repeat;
+    background-size: contain;
+}
+
+.map-leaf:nth-child(2) .rct-text .rct-node-icon .rct-icon:before{
+    background: url("../../icon/main/marker/etc/GIS_POI_icons/icon_gis_facility_finedust_normal.svg")no-repeat;
+    background-size: contain;
+}
+
+/*.map-leaf:nth-child(3) .rct-text .rct-node-icon .rct-icon:before{*/
+/*    background: url("../../icon/main/marker/etc/GIS_POI_icons/icon_gis_facility_etc_normal.svg")no-repeat;*/
+/*    background-size: contain;*/
+/*}*/
+
+.map-leaf:nth-child(3) .rct-text .rct-node-icon .rct-icon:before{
+    background: url("../../icon/main/marker/etc/GIS_POI_icons/icon_gis_facility_emergencyBell_normal.svg")no-repeat;
+    background-size: contain;
+}
+
+.map-leaf:nth-child(4) .rct-text .rct-node-icon .rct-icon:before{
+    background: url("../../icon/main/marker/etc/GIS_POI_icons/icon_gis_facility_network_normal.svg")no-repeat;
+    background-size: contain;
+}
+.map-leaf:nth-child(5) .rct-text .rct-node-icon .rct-icon:before{
+    background: url("../../icon/main/marker/etc/GIS_POI_icons/icon_gis_facility_network_normal-1.svg")no-repeat;
+    background-size: contain;
+}
+
+.map-leaf:nth-child(6) .rct-text .rct-node-icon .rct-icon:before{
+    background: url("../../icon/main/marker/etc/GIS_POI_icons/icon_gis_facility_bit_normal.svg")no-repeat;
+    background-size: contain;
+}
+
+.map-leaf:nth-child(7) .rct-text .rct-node-icon .rct-icon:before{
+    background: url("../../icon/main/marker/etc/GIS_POI_icons/icon_gis_facility_vds_normal.svg")no-repeat;
+    background-size: contain;
+}
+
+.map-leaf:nth-child(8) .rct-text .rct-node-icon .rct-icon:before{
+    background: url("../../icon/main/marker/etc/GIS_POI_icons/icon_gis_facility_waterLevel_normal.svg")no-repeat;
+    background-size: contain;
+}
+/*   iot관련   */
+.iot-map:nth-child(1) .rct-text .rct-node-icon .rct-icon:before{
+    background: url("../../icon/main/marker/etc/icon_gis_etc_waterQuality.png")no-repeat;
+
+    background-size: contain;
+}
+.iot-map:nth-child(2) .rct-text .rct-node-icon .rct-icon:before{
+        background: url("../../icon/main/marker/etc/icon_gis_etc_wifi_n.png")no-repeat;
+        background-size: contain;
+
+}
+.iot-map:nth-child(3) .rct-text .rct-node-icon .rct-icon:before{
+
+
+}
+
+.cctv-leaf > ol .rct-node-icon{
+    display: none;
+}
+.cctv-leaf .rct-text .rct-title,
+.map-leaf .rct-text .rct-title,
+.iot-map .rct-text .rct-title{
+    font-size: 18px;
+    font-weight: normal;
+    color: #f7f7f7;
+    position: relative;
+    top: -1px;
+}
+

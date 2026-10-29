@@ -1,0 +1,433 @@
+.dashboard_body .cctv_wrap{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 16px 32px 27px 32px;
+}
+
+.dashboard_body .cctv_wrap.disabled{
+    display: none;
+}
+
+.dashboard_body .cctv_wrap .cctv_search_result_info{
+    width: 100%;
+    height: 45px;
+    border-top: 1px solid #3c3f4f;
+    border-bottom: 1px solid #3c3f4f;
+    position: relative;
+}
+
+.dashboard_body .cctv_wrap .cctv_search_result_info .search_options{
+    font-size: 11px;
+    text-align: left;
+    color: #409fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.dashboard_body .cctv_wrap .cctv_search_result_info .search_options .search_result{
+    font-size: 12px;
+    font-weight: 300;
+    color: #b3b7c9;
+}
+
+.dashboard_body .cctv_wrap .cctv_search_result_info .update_time{
+    font-size: 10px;
+    font-weight: 300;
+    text-align: right;
+    color: #a3a3bf;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame{
+    width: 100%;
+    height: 570px;
+    position: relative;
+    top: 12px;
+    bottom: 27px;
+    box-sizing: border-box;
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame ul{
+    display: flex;
+    height: 24px;
+    font-weight: 300;
+    color: #a0a1b8;
+    align-items: center;
+    font-size: 11px;
+    box-sizing: content-box;
+    padding: 0px 0px 0px 4px;
+    overflow: visible;
+    position: relative;
+}
+
+.dashboard_body_ .cctv_wrap .cctv_list_frame ul > li{
+    height: 24px;
+    line-height: 24px;
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame ul > li:nth-child(1){
+    width: 56px;
+    text-align: center;
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame ul > li:nth-child(2){
+    width: 100px;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame ul > li:nth-child(3){
+    width: calc(100% - 156px);
+    padding-left: 4px;
+
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame ul .cctv_nm{
+    width: calc(100% - 180px);
+    height: 20px;
+    line-height: 20px;
+    display: block;
+    overflow: hidden;
+    /*border: 1px solid white;*/
+    margin-right: 24px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+}
+
+
+.dashboard_body .cctv_wrap .cctv_list_frame ul > li:nth-child(3) > span{
+    position: absolute;
+    right: 85px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 10px;
+    /*border: 1px solid white;*/
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame ul > li:nth-child(4){
+    width: 24px;
+}
+
+
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_list_header{
+    margin-bottom: 6px;
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_list_item_frame{
+    width: 100%;
+    height: 547px;
+    box-sizing: content-box;
+    overflow: hidden;
+    position: relative;
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_list_item_frame::-webkit-scrollbar{
+    width: 4px !important;
+    background-color: rgba(235, 242, 245, .1) !important;
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_list_item_frame::-webkit-scrollbar:hover{
+    width: 4px !important;
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_list_item_frame::-webkit-scrollbar-track{
+    background-color: rgba(235, 242, 245, .1) !important;
+}
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_list_item_frame::-webkit-scrollbar-thumb{
+    background: #5c5f82 !important;
+    cursor: pointer !important;
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_list_item_frame::-webkit-scrollbar-thumb:hover{
+    background: #787baf !important;
+    cursor: pointer !important;
+    width: 4px !important;
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_list_item_frame.none{
+    border: 1px solid #3c3f4f;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_list_item_frame.none .none_content{
+    width: 100%;
+    height: 547px;
+    display: flex;
+    justify-content: center;
+    box-sizing: content-box;
+    overflow: hidden;
+    position: relative;
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_list_item_frame.none .none_content .no_cctv_icon{
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    background: url("../../icon/main/event/icon_list_nothing.png");
+    top: 236px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_list_item_frame.none .none_content .no_cctv_content{
+    width: 329px;
+    position: absolute;
+    font-size: 15px;
+    color: #b3b7c9;
+    top: 269px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_list_item_frame.none .none_content .no_cctv_sub_content{
+    width: 300px;
+    position: absolute;
+    font-size: 11px;
+    color: #9696b1;
+    top: 291px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_list_item_frame.none>ul{
+    display: none;
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_list_item_frame.error{
+    border: 1px solid #3c3f4f;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_list_item_frame.error .error_content{
+    width: 100%;
+    height: 547px;
+    box-sizing: content-box;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_list_item_frame.error .error_content .cctv_reload_btn{
+    width: 36px;
+    height: 36px;
+    background: url("../../btn/main/dashboard/event/btn_reload_normal.png") no-repeat;
+    position: absolute;
+    top: 220px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_list_item_frame.error .error_content .cctv_reload_btn:before{
+    content: 'Reload';
+    position: absolute;
+    display: inline-block;
+    width: 36px;
+    height: 18px;
+    font-size: 12px;
+    font-weight: 300;
+    color: #666bff;
+    bottom: -19px;
+    left: 2px;
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_list_item_frame.error .error_content .cctv_reload_btn:hover{
+    background: url("../../btn/main/dashboard/event/btn_reload_hover.png") no-repeat;
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_list_item_frame.error .error_content .error_cctv_content{
+    width: 220px;
+    height: 39px;
+    line-height: 1.36;
+    font-size: 14px;
+    color: #b3b7c9;
+    position: absolute;
+    top: 284px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_list_item{
+    display: flex;
+    position: relative;
+    width: 468px;
+    height: 38px;
+    font-size: 12px;
+    font-weight: 300;
+    color: #f7f7f7;
+    padding-right: 11px;
+    border: solid 1px #333757;
+    border-radius: 4px;
+    background-color: #292a47;
+    margin-top: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    overflow: visible;
+
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_list_item:hover{
+    border: solid 1px #555b87;
+    background-color: #383a61;
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_list_item.active{
+    border: 1px solid #666bff;
+    background: linear-gradient(290deg, #1e2152 13%, #383c78 87%);
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_list_item > li .cctv_sort_btn{
+    width: 24px;
+    height: 24px;
+    z-index: 3000;
+    background: url("../../btn/main/dashboard/cctv/btn_cctvTab_info_normal.png") no-repeat ;
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_list_item > li .cctv_sort_btn.reg:hover{
+    background: url("../../btn/main/dashboard/cctv/btn_cctvTab_info_hover.png") no-repeat ;
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_list_item > li .cctv_sort_btn.reg.active{
+    background: url("../../btn/main/dashboard/cctv/btn_cctvTab_info_active.png") no-repeat ;
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_list_item > li .cctv_sort_btn.none_reg{
+    background: url("../../btn/main/dashboard/cctv/btn_cctvTab_regist_normal.png") no-repeat ;
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_list_item > li .cctv_sort_btn.none_reg:hover{
+    background: url("../../btn/main/dashboard/cctv/btn_cctvTab_regist_hover.png") no-repeat ;
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_list_item > li .cctv_sort_btn.none_reg.active{
+    background: url("../../btn/main/dashboard/cctv/btn_cctvTab_regist_active.png") no-repeat ;
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_list_item .tooltip{
+    width: calc(100% - 156px);
+}
+
+
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_paging_wrap{
+    width: 284px;
+    height: 20px;
+    /*margin-top: 12px;*/
+    position: absolute;
+    left: 50%;
+    bottom: 55px;
+    transform: translateX(-50%);
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_paging_wrap .cctv_list_paging{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_paging_wrap .cctv_list_paging > li{
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    padding: 0;
+    margin: 0 2px 0 0;
+    font-weight: normal;
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_paging_wrap .cctv_list_paging > li > button{
+    cursor: pointer;
+    display: block;
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    color: #e1e2e3;
+}
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_paging_wrap .cctv_list_paging > li > button.active{
+    border:1px solid #6569ff;
+    background-color: #26285c;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_paging_wrap .cctv_list_paging > li > button:hover{
+    background-color: #2c2e5d;
+    color: #666bff;
+    border-radius: 4px;
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_paging_wrap .paging > li .page{
+    text-align: center;
+    height: 20px;
+    width: 20px;
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_paging_wrap > ul > li .page.fore_most.dimmed,
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_paging_wrap > ul > li .page.fore_most.dimmed:hover{
+    background: url("../../btn/main/dashboard/cctv/page/btn_pagination_theForemost_dimmed.png") no-repeat;
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_paging_wrap > ul > li .page.fore_most:hover{
+    background: url("../../btn/main/dashboard/cctv/page/btn_pagination_theForemost_hover.png") no-repeat;
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_paging_wrap > ul > li .page.fore_most{
+    background: url("../../btn/main/dashboard/cctv/page/btn_pagination_theForemost_normal.png") no-repeat;
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_paging_wrap > ul > li .page.prev.dimmed,
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_paging_wrap > ul > li .page.prev.dimmed:hover{
+    background: url("../../btn/main/dashboard/cctv/page/btn_pagination_previous_dimmed.png") no-repeat;
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_paging_wrap > ul > li .page.prev:hover{
+    background: url("../../btn/main/dashboard/cctv/page/btn_pagination_previous_hover.png") no-repeat;
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_paging_wrap > ul > li .page.prev{
+    background: url("../../btn/main/dashboard/cctv/page/btn_pagination_previous_normal.png") no-repeat;
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_paging_wrap > ul > li .page.next.dimmed,
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_paging_wrap > ul > li .page.next.dimmed:hover{
+    background: url("../../btn/main/dashboard/cctv/page/btn_pagination_next_dimmed.png") no-repeat;
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_paging_wrap > ul > li .page.next:hover{
+    background: url("../../btn/main/dashboard/cctv/page/btn_pagination_next_hover.png") no-repeat;
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_paging_wrap > ul > li .page.next{
+    background: url("../../btn/main/dashboard/cctv/page/btn_pagination_next_normal.png") no-repeat;
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_paging_wrap > ul > li .page.last.dimmed,
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_paging_wrap > ul > li .page.last.dimmed:hover{
+    background: url("../../btn/main/dashboard/cctv/page/btn_pagination_theLast_dimmed.png") no-repeat;
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_paging_wrap > ul > li .page.last:hover{
+    background: url("../../btn/main/dashboard/cctv/page/btn_pagination_theLast_hover.png") no-repeat;
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_paging_wrap > ul > li .page.last{
+    background: url("../../btn/main/dashboard/cctv/page/btn_pagination_theLast_normal.png") no-repeat;
+}
+
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_paging_wrap > ul > li .page.prev.dimmed:hover,
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_paging_wrap > ul > li .page.next.dimmed:hover,
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_paging_wrap > ul > li .page.last.dimmed:hover,
+.dashboard_body .cctv_wrap .cctv_list_frame .cctv_paging_wrap > ul > li .page.fore_most.dimmed:hover{
+    cursor: default;
+}

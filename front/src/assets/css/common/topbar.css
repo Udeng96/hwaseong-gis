@@ -1,0 +1,597 @@
+.top_bar {
+    width: 1920px;
+    height: 56px;
+    background-color: #1d1e35;
+    z-index: 3000;
+    transition: top 0.5s ease;
+    position: absolute;
+    /*display: inline-flex;*/
+    display: flex;
+    align-items: center;
+}
+
+.top_bar .logo_img {
+    width: 244px;
+    height: 32px;
+    background: url("../../images/topbar/img_topBar_ci.svg") no-repeat;
+    cursor: pointer;
+    margin-left: 24px;
+    margin-right: 61px;
+    background-size: contain;
+}
+
+.top_bar .sub_info {
+    width: calc(100% - 703px);
+    height: 56px;
+    color: white;
+    display: flex;
+    align-items: center;
+
+}
+
+.top_bar .sub_info .date_info {
+    width: 153px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #f9f9f9;
+    margin-right: 32px;
+}
+
+.top_bar .sub_info .weather_info,
+.top_bar .sub_info .rainfall_info,
+.top_bar .sub_info .dust_info {
+    width: 418px;
+    height: 42px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 18px;
+    border-radius: 6px;
+    position: relative;
+    margin-right: 37px;
+}
+
+.top_bar .sub_info .weather_info .weather {
+    display: flex;
+    width: 133px;
+    align-items: center;
+    position: relative;
+    margin-right: 17px;
+
+}
+
+.top_bar .sub_info .weather_info .weather .weather_img {
+    width: 32px;
+    height: 32px;
+    margin-right: 7px;
+    /*background: url("../../icon/topbar/weather/icon_weather_01.png") no-repeat;*/
+}
+
+/*맑음*/
+.top_bar .sub_info .weather_info .weather_img.weather_01 {
+    background: url("../../icon/topbar/weather/icon_weather_01.png") no-repeat;
+}
+
+/*구름 많음*/
+.top_bar .sub_info .weather_info .weather_img.weather_02 {
+    background: url("../../icon/topbar/weather/icon_weather_02.png") no-repeat;
+}
+
+/*구름 많음*/
+.top_bar .sub_info .weather_info .weather_img.weather_03 {
+    background: url("../../icon/topbar/weather/icon_weather_03.png") no-repeat;
+}
+
+/*흐림*/
+.top_bar .sub_info .weather_info .weather_img.weather_04 {
+    background: url("../../icon/topbar/weather/icon_weather_04.png") no-repeat;
+}
+
+/*비*/
+.top_bar .sub_info .weather_info .weather_img.weather_05 {
+    background: url("../../icon/topbar/weather/icon_weather_05.png") no-repeat;
+}
+
+/*눈*/
+.top_bar .sub_info .weather_info .weather_img.weather_06 {
+    background: url("../../icon/topbar/weather/icon_weather_06.png") no-repeat;
+}
+
+/*비/눈*/
+.top_bar .sub_info .weather_info .weather_img.weather_07 {
+    background: url("../../icon/topbar/weather/icon_weather_07.png") no-repeat;
+}
+
+.top_bar .sub_info .weather_info .weather_img.weather_08 {
+    background: url("../../icon/topbar/weather/icon_weather_08.png") no-repeat;
+}
+
+.top_bar .sub_info .weather_info .weather_img.weather_09 {
+    background: url("../../icon/topbar/weather/icon_weather_09.png") no-repeat;
+}
+
+.top_bar .sub_info .weather_info .weather_img.weather_10 {
+    background: url("../../icon/topbar/weather/icon_weather_10.png") no-repeat;
+}
+
+.top_bar .sub_info .weather_info .weather_img.weather_11 {
+    background: url("../../icon/topbar/weather/icon_weather_11.png") no-repeat;
+}
+
+.top_bar .sub_info .weather_info .weather_img.weather_12 {
+    background: url("../../icon/topbar/weather/icon_weather_12.png") no-repeat;
+}
+
+.top_bar .sub_info .weather_info .weather_img.weather_13 {
+    background: url("../../icon/topbar/weather/icon_weather_13.png") no-repeat;
+}
+
+.top_bar .sub_info .weather_info .weather_img.weather_14 {
+    background: url("../../icon/topbar/weather/icon_weather_14.png") no-repeat;
+}
+
+.top_bar .sub_info .weather_info .weather_img.weather_15 {
+    background: url("../../icon/topbar/weather/icon_weather_15.png") no-repeat;
+}
+
+/*빗방울*/
+.top_bar .sub_info .weather_info .weather_img.weather_16 {
+    background: url("../../icon/topbar/weather/icon_weather_16.png") no-repeat;
+}
+
+/*눈*/
+.top_bar .sub_info .weather_info .weather_img.weather_17 {
+    background: url("../../icon/topbar/weather/icon_weather_17.png") no-repeat;
+}
+
+/*빗방울 눈날림*/
+.top_bar .sub_info .weather_info .weather_img.weather_18 {
+    background: url("../../icon/topbar/weather/icon_weather_18.png") no-repeat;
+}
+
+/*눈날림*/
+.top_bar .sub_info .weather_info .weather_img.weather_19 {
+    background: url("../../icon/topbar/weather/icon_weather_19.png") no-repeat;
+}
+
+.top_bar .sub_info .weather_info .weather_img.weather_20 {
+    background: url("../../icon/topbar/weather/icon_weather_20.png") no-repeat;
+}
+
+.top_bar .sub_info .weather_info .weather .weather_state {
+    margin-right: 13px;
+    font-size: 12px;
+    font-weight: normal;
+    height: 32px;
+    line-height: 32px;
+}
+
+.top_bar .sub_info .weather_info .weather .weather_temp {
+    height: 32px;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 32px;
+}
+
+.top_bar .sub_info .weather_info .weather .weather_temp .degree {
+    font-size: 11px;
+    font-weight: 300;
+    height: 32px;
+    line-height: 32px;
+    margin-left: 2px;
+}
+
+.top_bar .sub_info .weather_info .humi {
+    display: flex;
+    width: 70px;
+    margin-right: 18px;
+    align-items: center;
+    position: relative;
+    box-sizing: content-box;
+}
+
+.top_bar .sub_info .weather_info .humi .humi_title {
+    font-size: 12px;
+    font-weight: 300;
+    color: #bfbfbf;
+    margin-right: 10px;
+}
+
+.top_bar .sub_info .weather_info .humi .humi_title > span {
+    margin-right: 4px;
+    font-weight: bold;
+}
+
+.top_bar .sub_info .weather_info .humi .humi_content {
+    height: 18px;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 18px;
+}
+
+.top_bar .sub_info .weather_info .humi .humi_title > span {
+    margin-right: 4px;
+    font-weight: bold;
+}
+
+.top_bar .sub_info .weather_info .humi .humi_content {
+    height: 18px;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 18px;
+}
+
+
+.top_bar .sub_info .weather_info .wind {
+    width: 130px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    box-sizing: content-box;
+    margin-right: 15px;
+}
+
+.top_bar .sub_info .weather_info .wind .wind_title {
+    font-size: 12px;
+    font-weight: 300;
+    color: #bfbfbf;
+    margin-right: 10px;
+}
+
+.top_bar .sub_info .weather_info .wind .wind_title > span {
+    margin-right: 4px;
+    font-weight: bold;
+}
+
+
+.top_bar .sub_info .weather_info .wind .wind_content {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.top_bar .sub_info .dust_info .dust,
+.top_bar .sub_info .dust_info .ultra_dust {
+    width: 115px;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.top_bar .sub_info .dust_info .dust {
+    margin-right: 18px;
+}
+
+
+.top_bar .sub_info .dust_info .title {
+    font-size: 12px;
+    font-weight: 300;
+    color: #bfbfbf;
+    margin-right: 8px;
+}
+
+.top_bar .sub_info .dust_info .title > span {
+    margin-right: 4px;
+    font-weight: bold;
+}
+
+.top_bar .sub_info .dust_info .state {
+    padding: 1px 7px 1px 6px;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: normal;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+}
+
+.top_bar .sub_info .state.very_bad {
+    width: auto;
+    height: 20px;
+    background-color: rgba(255, 38, 53, 0.2);
+}
+
+.top_bar .sub_info .state.bad {
+    width: auto;
+    height: 20px;
+    background-color: rgba(247, 133, 67, 0.2);
+    color: #f78543;
+}
+
+.top_bar .sub_info .state.normal {
+    width: auto;
+    height: 20px;
+    background-color: rgba(0, 186, 83, 0.2);
+    color: #01ba54;
+}
+
+.top_bar .sub_info .state.good {
+    width: auto;
+    height: 20px;
+    background-color: rgba(46, 157, 255, 0.2);
+    color: #2e9dff;
+}
+
+.top_bar .sub_info .rainfall_info .percent {
+    width: auto;
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-right: 19px;
+}
+
+.top_bar .sub_info .rainfall_info .percent .title {
+    font-size: 12px;
+    font-weight: 300;
+    height: 18px;
+    line-height: 18px;
+    color: #bfbfbf;
+    margin-right: 10px;
+}
+
+.top_bar .sub_info .rainfall_info .percent .title > span {
+    font-weight: bold;
+    margin-right: 4px;
+}
+
+
+.top_bar .sub_info .rainfall_info .percent .state {
+    width: 42px;
+    font-size: 12px;
+    font-weight: normal;
+    display: flex;
+}
+
+.top_bar .sub_info .rainfall_info .percent .state .state_img {
+    width: 14px;
+    height: 18px;
+    margin-right: 3px;
+}
+
+/*.top_bar .sub_info .rainfall_info .percent .state .state_img.zero_percent{ background-image: url("/src/public/static/icon/topbar/rainfall/icon_topBar_weather_rainfall_0%.png")}*/
+/*.top_bar .sub_info .rainfall_info .percent .state .state_img.twenty_percent{ background-image: url("/src/public/static/icon/topbar/rainfall/icon_topBar_weather_rainfall_21~40%.png")}*/
+/*.top_bar .sub_info .rainfall_info .percent .state .state_img.forty_percent{ background-image: url("/src/public/static/icon/topbar/rainfall/icon_topBar_weather_rainfall_41~60%.png")}*/
+/*.top_bar .sub_info .rainfall_info .percent .state .state_img.sixty_percent{ background-image: url("/src/public/static/icon/topbar/rainfall/icon_topBar_weather_rainfall_61~80%.png")}*/
+/*.top_bar .sub_info .rainfall_info .percent .state .state_img.eighty_percent{ background-image: url("/src/public/static/icon/topbar/rainfall/icon_topBar_weather_rainfall_81~99%.png")}*/
+/*.top_bar .sub_info .rainfall_info .percent .state .state_img.ninety_percent{ background-image: url("/src/public/static/icon/topbar/rainfall/icon_topBar_weather_rainfall_81~99%.png")}*/
+/*.top_bar .sub_info .rainfall_info .percent .state .state_img.hundred_percent{ background-image: url("/src/public/static/icon/topbar/rainfall/icon_topBar_weather_rainfall_100%.png")}*/
+
+
+.top_bar .sub_info .rainfall_info .percent .state .state_figure {
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+}
+
+
+.top_bar .sub_info .rainfall_info .amount {
+    width: auto;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.top_bar .sub_info .rainfall_info .amount .title {
+    font-size: 12px;
+    font-weight: 300;
+    color: #bfbfbf;
+    margin-right: 10px;
+}
+
+.top_bar .sub_info .rainfall_info .amount .title > span {
+    margin-right: 4px;
+}
+
+
+.top_bar .sub_info .rainfall_info .amount .state {
+    width: 56px;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.top_bar .weather_report {
+    width: 492px;
+    height: 28px;
+    display: flex;
+    padding-left: 13px;
+    border-radius: 4px;
+    border: solid 1px #000;
+    background-color: #101021;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 13px;
+    font-weight: 400;
+    align-items: center;
+}
+
+.top_bar .vertical-line {
+
+    width: 1px;
+    height: 20px;
+    margin-right: 16px;
+    background-color: #404457;
+}
+
+.top_bar .selector-select {
+    position: relative ;
+    width: 212px ;
+    height: auto ;
+    min-height: 34px ;
+    background-color: #1d1e35 ;
+    color: #f9f9f9 ;
+    border-radius: 5px ;
+    border: solid 1px #4a4d78 ;
+    box-shadow: none ;
+    cursor: pointer ;
+    padding: 0 12px 0 12px ;
+    margin-right: 15px ;
+}
+
+.top_bar .selector-select::after {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    z-index: 10;
+    top: 50%;
+    transform:translateY(-50%);
+    background: url("../../../assets/icon/main/btn_gis_searchBar_dropdown_down_normal.svg");
+}
+
+.top_bar .selector-select.active::after {
+    background: url("../../../assets/icon/main/btn_gis_searchBar_dropdown_up_normal.svg");
+}
+
+
+.top_bar .selector-select.active{
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.top_bar .selector-select:hover{
+    background-color : #4b4e73;
+}
+
+
+.top_bar .selector-select.active:hover{
+    background-color: #1d1e35;
+}
+
+.top_bar .select-option-wrapper{
+    width: 212px;
+    height: auto;
+    max-height: 212px;
+    background: #1d1e35;
+    position: absolute;
+    left: -1px;
+    top: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: solid 1px #4a4d78 ;
+    color: #f9f9f9 ;
+    display: none;
+}
+
+.top_bar .selector-select.active .select-option-wrapper{
+    display: block;
+}
+
+.top_bar .select-option-wrapper .select-option-list{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    max-height: 212px;
+}
+
+.top_bar .select-option-wrapper .select-option-list::-webkit-scrollbar{
+    width: 4px ;
+    background-color: rgba(235, 242, 245, .1);
+}
+
+.top_bar .select-option-wrapper .select-option-list::-webkit-scrollbar:hover{
+    width: 4px ;
+}
+
+.top_bar .select-option-wrapper .select-option-list::-webkit-scrollbar-track{
+    background-color: rgba(235, 242, 245, .1);
+}
+
+.top_bar .select-option-wrapper .select-option-list::-webkit-scrollbar-thumb{
+    background: #5c5f82;
+    cursor: pointer;
+}
+
+.top_bar .select-option-wrapper .select-option-list::-webkit-scrollbar-thumb:hover{
+    background: #787baf;
+    cursor: pointer;
+    width: 4px;
+}
+
+
+
+
+.top_bar .select-option-wrapper .select-option-list > li{
+    width: 100%;
+    height: 38px;
+    line-height: 38px;
+    font-size: 13px;
+}
+
+.top_bar .select-option-wrapper .select-option-list .active{
+    border: 2px solid rgba(75, 78, 115, 0.72);;
+}
+
+.top_bar .select-option-wrapper .select-option-list > li:hover{
+    background: rgba(75, 78, 115, 0.72);
+}
+
+.top_bar .select-option-wrapper .select-option-list >li:nth-child(even){
+    background: rgba(11, 12, 31, 0.68);
+}
+
+.top_bar .select-option-wrapper .select-option-list >li:nth-child(even):hover{
+    background: rgba(75, 78, 115, 0.72);
+}
+
+
+
+
+.top_bar .selector-select:focus-visible{
+    outline: none;
+}
+
+.top_bar .selector-select.active {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+
+.top_bar .profile {
+    width: 154px;
+    height: 24px;
+    line-height: 27px;
+}
+
+.top_bar .profile .user {
+    display: inline-block;
+    width: 124px;
+    height: 20px;
+    opacity: 0.89;
+    font-size: 14px;
+    letter-spacing: -0.35px;
+    text-align: right;
+    color: #9f9fc9;
+}
+
+.top_bar .profile .user span {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.4px;
+    color: #fff;
+    margin-right: 2px;
+
+}
+
+.top_bar .logout_btn {
+
+    width: 87px;
+    height: 34px;
+    margin-right: 13px;
+    padding: 8px 14px 7px 17px;
+    border-radius: 5px;
+    border: solid 1px #353854;
+    background-color: #22233b;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    color: #afb2c4;
+}
+
+
+.top_bar .logout_btn:hover {
+    border: 1px solid #72749e;
+    background-color: #444778;
+}
+
+

@@ -1,0 +1,956 @@
+.cctv_icon{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    transition: all .25s;
+    cursor: pointer;
+    z-index: 9007;
+    left: 30%;
+}
+
+
+
+.cctv_icon .cctv_mgr_info{
+    width: auto;
+    height: 20px;
+    font-size:15px;
+    font-weight: bold;
+    color: #f7f7f7;
+    text-shadow: rgb(0 0 0) -0.07vw 0px, rgb(0 0 0) 0px 0.07vw, rgb(0 0 0) 0.07vw 0px, rgb(0 0 0) 0px -0.07vw;
+    position: absolute;
+    top: 43px;
+    left: 50%;
+    z-index: 100001;
+    transform: translateX(-50%);
+    text-align: center;
+    white-space: pre;
+}
+.iotMarkerImage{ /* iot마커 이미지  */
+    width: 20px;
+    height: 20px;
+    background-image: url("../../icon/main/marker/etc/icon_gis_etc_waterQuality.png");
+    background-size: contain ;
+}
+
+.road_view_marker{
+    width: 26px;
+    height: 48px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../../icon/main/marker/icon_gis_roadView_marker.png");
+}
+.cctv_list_icon{
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    margin-top: 2px;
+}
+
+.cctv_list_icon.general{
+    background-image: url("../../icon/main/marker/CCTV/icon_cctv_general_normal.png");
+}
+
+.cctv_list_icon.disaster{
+    background-image: url("../../icon/main/marker/CCTV/icon_cctv_disaster_normal.png");
+}
+
+.cctv_list_icon.clampdown{
+    background-image: url("../../icon/main/marker/CCTV/icon_cctv_clampdown_normal.png");
+}
+
+.cctv_list_icon.childSafety{
+    background-image: url("../../icon/main/marker/CCTV/icon_cctv_childSafety_normal.png");
+}
+
+.cctv_list_icon.safeGuard{
+    background-image: url("../../icon/main/marker/CCTV/icon_cctv_safeGuard_normal.png");
+}
+
+.cctv_list_icon.traffic{
+    background-image: url("../../icon/main/marker/CCTV/icon_cctv_traffic_normal.png");
+}
+
+.cctv_icon.general{
+    background: url("../../icon/main/marker/CCTV/icon_cctv_general_normal.png");
+}
+
+.cctv_icon.general:hover{
+    background: url("../../icon/main/marker/CCTV/icon_cctv_general_hover.png");
+}
+
+.cctv_icon.general.active{
+    background: url("../../icon/main/marker/CCTV/icon_cctv_general_acitve.png");
+}
+
+.cctv_icon.disaster{
+    background: url("../../icon/main/marker/CCTV/icon_cctv_disaster_normal.png");
+}
+
+.cctv_icon.disaster:hover{
+    background: url("../../icon/main/marker/CCTV/icon_cctv_disaster_hover.png");
+}
+
+.cctv_icon.disaster.active{
+    background: url("../../icon/main/marker/CCTV/icon_cctv_disaster_active.png");
+}
+
+.cctv_icon.clampdown{
+    background: url("../../icon/main/marker/CCTV/icon_cctv_clampdown_normal.png");
+}
+
+.cctv_icon.cctv_list.clampdown:hover{
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background: url("../../icon/main/marker/CCTV/icon_cctv_clampdown_normal.png");
+}
+
+.cctv_icon.clampdown:hover{
+    background: url("../../icon/main/marker/CCTV/icon_cctv_clampdown_hover.png");
+}
+
+.cctv_icon.clampdown.active{
+    background: url("../../icon/main/marker/CCTV/icon_cctv_clampdown_active.png");
+}
+
+.cctv_icon.childSafety{
+    background: url("../../icon/main/marker/CCTV/icon_cctv_childSafety_normal.png");
+}
+
+.cctv_icon.childSafety:hover{
+    background: url("../../icon/main/marker/CCTV/icon_cctv_childSafety_hover.png");
+}
+
+.cctv_icon.childSafety.active{
+    background: url("../../icon/main/marker/CCTV/icon_cctv_childSafety_active.png");
+}
+
+.cctv_icon.safeGuard{
+    background: url("../../icon/main/marker/CCTV/icon_cctv_safeGuard_normal.png");
+}
+
+.cctv_icon.safeGuard:hover{
+    background: url("../../icon/main/marker/CCTV/icon_cctv_safeGuard_hover.png");
+}
+
+.cctv_icon.safeGuard.active{
+    background: url("../../icon/main/marker/CCTV/icon_cctv_safeGuard_active.png");
+}
+
+.cctv_icon.traffic{
+    background: url("../../icon/main/marker/CCTV/icon_cctv_traffic_normal.png");
+}
+
+.cctv_icon.traffic:hover{
+    background: url("../../icon/main/marker/CCTV/icon_cctv_traffic_hover.png");
+}
+
+.cctv_icon.traffic.active{
+    background: url("../../icon/main/marker/CCTV/icon_cctv_traffic_active.png");
+}
+
+.cctv_icon.cctvClustering{
+    position: absolute;
+    background-color: transparent;
+    z-index: 9009;
+    background-image: url("../../icon/main/marker/CCTV/icon_cctvClustering_normal.png");
+}
+
+.cctv_icon.cctvClustering:hover{
+    background: url("../../icon/main/marker/CCTV/icon_cctvClustering_hover.png");
+}
+
+.cctv_icon.cctvClustering.active{
+    background: url("../../icon/main/marker/CCTV/icon_cctvClustering_active.png");
+}
+
+.cctvClustering_count{
+    width: auto;
+    padding: 0 7px 0 7px;
+    height: 21px;
+    line-height: 21px;
+    background: #01172e;
+    border-radius: 10.5px;
+    box-shadow: 0 2px 4px 0, rgba(0,0,0,0.24);
+    border: 1px solid #e1e2e3;
+    font-size: 12px;
+    font-weight: bold;
+    color: #f7f7f7;
+    position: absolute;
+    top: -9px;
+    right: -13px;
+    z-index: 4000;
+}
+
+.cctvClustering_list_frame{
+    width: 268px;
+    height: 345px;
+    padding: 1px 1px 12px 0;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.3);
+    border: solid 1px #6569ff;
+    background-color: #151529;
+    position: absolute;
+    left: 48px;
+    top: 0;
+    cursor: default;
+    display: none;
+}
+
+.cctvClustering.active .cctvClustering_list_frame{
+    display: block;
+    z-index: 9009;
+    position: absolute;
+}
+
+.cctvClustering_list_header{
+    width: 268px;
+    height: 34px;
+    padding: 9px 7px 7px 10px;
+    position: absolute;
+    left: 0;
+    border-bottom: 1px solid #2b2b45;
+    box-sizing: border-box;
+}
+
+.cctvClustering_header_icon{
+    width: 15px;
+    height: 15px;
+    background: url("../../icon/modal/popup/icon_cctv_pop__thumbnail_header_castNet.png");
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cctvClustering_header_title{
+
+    font-size: 12px;
+    font-weight: 500;
+    color: #666bff;
+    text-align: left;
+    position: absolute;
+    left: 31px;
+}
+
+.cctvClustering_close_btn{
+    width: 17px;
+    height: 17px;
+    right: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    background: url("../../btn/modal/popup/btn_cctv_pop_thumbnail_close_normal.png");
+}
+
+.cctvClustering_close_btn:hover{
+    background: url("../../btn/modal/popup/btn_cctv_pop_thumbnail_close_hover.png");
+}
+
+.cctvClustering_list_body{
+    width: 268px;
+    height: 309px;
+    padding: 8px 9px 12px 13px;
+    position: relative;
+    top: 34px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.cctvClustering_list_item{
+    width: 100%;
+    height: 28px;
+    line-height: 28px;
+    display: flex;
+    position: relative;
+    left: 0;
+    overflow: visible;
+}
+
+.cctvClustering_list_item.active{
+    background-color: #0e4a82;
+}
+
+cctvClustering_item_icon{
+    width: 20px;
+    height: 20px;
+}
+
+.cctvClustering_item_title{
+    width: 200px;
+    max-width:  180px;
+    font-size: 12px;
+    font-weight: normal;
+    color: #f7f7f7;
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+
+.cctvClustering_item_play_btn{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: url("../../btn/main/gis/cctvCluster/btn_cctvClustering_list_play_normal.png") no-repeat;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+
+.cctvClustering_item_play_btn:hover{
+    background: url("../../btn/main/gis/cctvCluster/btn_cctvClustering_list_play_hover.png") no-repeat;
+}
+
+.event_cctv_icon{
+    width: 45px;
+    height: 62px;
+    position: absolute;
+    transition: all .25s;
+    z-index: 2000;
+    cursor:default;
+}
+
+.castNet_cctv_icon{
+    width:45px;
+    height: 62px;
+    position: absolute;
+    transition : all .25s;
+    z-index:2000;
+    cursor:default;
+    background-image: url("../../icon/main/marker/icon_cctvNetwork_locating_castNet.png");
+    background-size: contain;
+}
+
+.event_cctv_icon.disaster.earthquake{
+    background: url("../../icon/main/marker/event/icon_cctvNetwork_event_disaster_earthquake.png");
+}
+.event_cctv_icon.disaster.etc{
+    background: url("../../icon/main/marker/event/icon_cctvNetwork_event_disaster_forest fire.png");
+}
+.event_cctv_icon.firefighting.etc{
+    background: url("../../icon/main/marker/event/icon_cctvNetwork_event_firefighting_etc.png");
+}
+.event_cctv_icon.firefighting.fire{
+    background: url("../../icon/main/marker/event/icon_cctvNetwork_event_firefighting_fire.png");
+}
+.event_cctv_icon.firefighting.firstAid{
+    background: url("../../icon/main/marker/event/icon_cctvNetwork_event_firefighting_firstAid.png");
+}
+.event_cctv_icon.firefighting.rescue{
+    background: url("../../icon/main/marker/event/icon_cctvNetwork_event_firefighting_rescue.png");
+}
+.event_cctv_icon.police.code0{
+    background: url("../../icon/main/marker/event/icon_cctvNetwork_event_police_code0.png");
+}
+.event_cctv_icon.police.code1{
+    background: url("../../icon/main/marker/event/icon_cctvNetwork_event_police_code1.png");
+}
+.event_cctv_icon.police.code2{
+    background: url("../../icon/main/marker/event/icon_cctvNetwork_event_police_code2.png");
+}
+.event_cctv_icon.police.code3{
+    background: url("../../icon/main/marker/event/icon_cctvNetwork_event_police_code3.png");
+}
+.event_cctv_icon.police.code4{
+    background: url("../../icon/main/marker/event/icon_cctvNetwork_event_police_code4.png");
+}
+.event_cctv_icon.police.fire{
+    background: url("../../icon/main/marker/event/icon_cctvNetwork_event_police_fire.png");
+}
+
+.event_cctv_icon.security.emergency_bell{
+    background: url("../../icon/main/marker/event/icon_cctvNetwork_event_security_emergencyBell.png");
+}
+
+.event_cctv_icon.security.safe_return_home{
+    background: url("../../icon/main/marker/event/icon_cctvNetwork_event_security_safeReturnHome.png");
+}
+.event_cctv_icon.locating{
+    background: url("../../icon/main/marker/event/ani_gis_event_poi.png");
+}
+.event_cctv_icon.locating_cast{
+    background: url("../../icon/main/marker/icon_cctvNetwork_locating_castNet.png");
+}
+
+.facility_icon{
+    width: 32px;
+    height: 42px;
+    background-size: contain;
+    position: absolute;
+    transition: all .25s;
+    z-index: 2000;
+    left: 45%;
+}
+
+.facility_icon.fine_dust.measurement{
+    top: 20%;
+    background-image: url("../../icon/main/marker/etc/icon_gis_etc_fineDust_measurement.png");
+}
+
+.facility_icon.cooling{
+    top: 30%;
+    background-image: url("../../icon/main/marker/etc/icon_gis_etc_coolingCentre.png");
+}
+.facility_icon.vms{
+    background-image: url("../../icon/main/marker/etc/GIS_POI_icons/icon_gis_facility_vms_normal.svg");
+}
+.facility_icon.vms:hover{
+    background-image: url("../../icon/main/marker/etc/GIS_POI_icons/icon_gis_facility_vms_hover.svg");
+}
+.facility_icon.vms.active{
+    background-image: url("../../icon/main/marker/etc/GIS_POI_icons/icon_gis_facility_vms_active.svg");
+}
+
+.facility_icon.dust{
+    top: 25%;
+    background-image: url("../../icon/main/marker/etc/GIS_POI_icons/icon_gis_facility_finedust_normal.svg");
+}
+.facility_icon.dust:hover{
+    top: 25%;
+    background-image: url("../../icon/main/marker/etc/GIS_POI_icons/icon_gis_facility_finedust_hover.svg");
+}
+.facility_icon.dust.active{
+    top: 25%;
+    background-image: url("../../icon/main/marker/etc/GIS_POI_icons/icon_gis_facility_finedust_active.svg");
+}
+.facility_icon.emergencyBell{
+    top: 55%;
+    background-image: url("../../icon/main/marker/etc/GIS_POI_icons/icon_gis_facility_emergencyBell_normal.svg");
+}
+.facility_icon.emergencyBell:hover{
+    top: 55%;
+    background-image: url("../../icon/main/marker/etc/GIS_POI_icons/icon_gis_facility_emergencyBell_hover.svg");
+}
+.facility_icon.emergencyBell.active{
+    top: 55%;
+    background-image: url("../../icon/main/marker/etc/GIS_POI_icons/icon_gis_facility_emergencyBell_active.svg");
+}
+.facility_icon.ocn{
+    top: 55%;
+    background-image: url("../../icon/main/marker/etc/GIS_POI_icons/icon_gis_facility_network_normal.svg");
+}
+.facility_icon.ocn:hover{
+    top: 55%;
+    background-image: url("../../icon/main/marker/etc/GIS_POI_icons/icon_gis_facility_network_hover.svg");
+}
+.facility_icon.ocn.active{
+    top: 55%;
+    background-image: url("../../icon/main/marker/etc/GIS_POI_icons/icon_gis_facility_network_active.svg");
+}
+.facility_icon.unmanned{
+    top: 65%;
+    background-image: url("../../icon/main/marker/etc/GIS_POI_icons/icon_gis_facility_network_normal-1.svg");
+}
+.facility_icon.unmanned:hover{
+    top: 65%;
+    background-image: url("../../icon/main/marker/etc/GIS_POI_icons/icon_gis_facility_network_hover-1.svg");
+}
+.facility_icon.unmanned.active{
+    top: 65%;
+    background-image: url("../../icon/main/marker/etc/GIS_POI_icons/icon_gis_facility_network_active-1.svg");
+}
+.facility_icon.bit{
+    top: 60%;
+    background-image: url("../../icon/main/marker/etc/GIS_POI_icons/icon_gis_facility_bit_normal.svg");
+}
+.facility_icon.bit:hover{
+    top: 60%;
+    background-image: url("../../icon/main/marker/etc/GIS_POI_icons/icon_gis_facility_bit_hover.svg");
+}
+.facility_icon.bit.active{
+    top: 60%;
+    background-image: url("../../icon/main/marker/etc/GIS_POI_icons/icon_gis_facility_bit_active.svg");
+}
+.facility_icon.vds{
+    top: 70%;
+    background-image: url("../../icon/main/marker/etc/GIS_POI_icons/icon_gis_facility_vds_normal.svg");
+}
+.facility_icon.vds:hover{
+    top: 70%;
+    background-image: url("../../icon/main/marker/etc/GIS_POI_icons/icon_gis_facility_vds_hover.svg");
+}
+.facility_icon.vds.active{
+    top: 70%;
+    background-image: url("../../icon/main/marker/etc/GIS_POI_icons/icon_gis_facility_vds_active.svg");
+}
+.facility_icon.water{
+    top: 50%;
+    background-image: url("../../icon/main/marker/etc/GIS_POI_icons/icon_gis_facility_waterLevel_normal.svg");
+}
+
+.facility_icon.water:hover{
+    top: 50%;
+    background-image: url("../../icon/main/marker/etc/GIS_POI_icons/icon_gis_facility_waterLevel_hover.svg");
+}
+
+.facility_icon.water.active{
+    top: 50%;
+    background-image: url("../../icon/main/marker/etc/GIS_POI_icons/icon_gis_facility_waterLevel_active.svg");
+}
+.facility_icon.fire_station{
+    top: 45%;
+    background-image: url("../../icon/main/marker/etc/icon_gis_etc_waterSupply.png");
+}
+
+
+.facility_icon.water_quality{
+    background-image: url("../../icon/main/marker/etc/icon_gis_etc_waterQuality.png");
+}
+.facility_icon.water_supply{
+    top: 80%;
+    background-image: url("../../icon/main/marker/etc/icon_gis_etc_waterSupply.png");
+}
+.facility_icon.wifi{
+    background-image: url("../../icon/main/marker/etc/icon_gis_etc_wifi.png");
+}
+.facility_icon.wifi.bus{
+    background-image: url("../../icon/main/marker/etc/icon_gis_etc_wifi_b.png");
+}
+.facility_icon.wifi.seongnam{
+    background-image: url("../../icon/main/marker/etc/icon_gis_etc_wifi_s.png");
+}
+.facility_icon.wifi.science{
+    top: 45%;
+    background-image: url("../../icon/main/marker/etc/icon_gis_etc_wifi_n.png");
+}
+.facility_icon.summerTime{
+    top: 45%;
+    background-image: url("../../icon/main/marker/etc/icon_gis_etc_summerEvent.png");
+}
+
+.iot_info_frame {
+    width: 320px;
+    height: 123px;
+    border-radius: 14px;
+    box-shadow: 0px 3px 9px 0 rgba(4, 15, 56, 0.27);
+    padding: 0px 0 0 18px;
+    border: solid 1px #6569ff;
+    background-color: #1d1f35;
+    position: relative;
+}
+
+.iot_info_frame  .iot_stat_btn{
+    width: 284px;
+    height: 32px;
+    border-radius: 6px;
+    border: solid 1px #3b3f63;
+    background-color: #333652;
+    opacity:1;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #f2f4fc;
+    position: relative;
+}
+.iot_info_frame  .iot_stat_btn .iot_stat_btn_image{
+    width: 18px;
+    height: 18px;
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url("../../btn/topbar/icon_rightPanel_dropdown_arrow_normal.png") ;
+    background-size: contain;
+}
+
+.iot_info_frame.active {
+    height: 330px;
+}
+
+
+.iot_info_frame .iot_info_title{
+    display: block;
+    width: auto;
+    height: 20px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #fdfdff;
+    margin-bottom: 4px;
+}
+
+.iot_info_frame .iot_info_loca{
+    width: 100%;
+    height: 18px;
+    position: relative;
+    margin-bottom: 2px;
+}
+
+.iot_info_frame .iot_info_loca .title{
+    width: 45px;
+    height: 18px;
+    position: absolute;
+    font-size: 12px;
+    color: #c9ccd6;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.iot_info_frame .iot_info_loca .title:before{
+    content: '';
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    position: absolute;
+    left: -18px;
+}
+
+.iot_info_frame .iot_info_loca .title:before{
+    background-image: url("../../icon/main/marker/etc/icon_cctv_infoWindow_address.png");
+}
+
+.iot_info_frame .iot_info_loca .info{
+    width: auto;
+    height: 18px;
+    text-align: left;
+    font-size: 12px;
+    color: #fcfdff;
+    font-weight: 300;
+    position: absolute;
+    left: 68px;
+}
+.iot_info_frame.active .iot_stat_btn{
+    width: 284px;
+    height: 32px;
+    border-radius: 6px;
+    border: solid 1px #3b3f63;
+    background-color: #333652;
+    opacity: 0.66;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #f2f4fc;
+    position: relative;
+}
+
+.iot_info_frame .iot_stat_btn:hover{
+    border : 1px solid #3b3f63;
+    background-color: #3d4166;
+}
+
+
+.iot_info_frame.active .iot_stat_btn:after{
+    /*width: 18px;*/
+    /*height: 18px;*/
+    /*content: '';*/
+    /*display: inline-block;*/
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*transform: translateY(-50%);*/
+    /*background-image: url("../../btn/topbar/icon_rightPanel_dropdown_arrow_normal.png") ;*/
+    /*background-size: contain;*/
+
+}
+
+
+
+.iot_info_frame .iot_stat_btn:hover{
+    border: solid 1px #3b3f63;
+    background-color: #3d4166;
+}
+
+.iot_info_frame .iot_stat_frame{
+    width: 284px;
+    height: 191px;
+    margin-top: 14px;
+    position: relative;
+    display: none;
+}
+
+.iot_info_frame.active .iot_stat_frame{
+    display: block;
+}
+
+
+.iot_info_frame .iot_stat_header{
+    width: 284px;
+    height: 30px;
+    position: relative;
+
+}
+
+.iot_info_frame .iot_stat_frame .iot_stat_title{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #e1e4f0;
+}
+
+.iot_info_frame .iot_stat_frame .iot_stat_body{
+    width: 284px;
+    height: 15px;
+    position: absolute;
+}
+
+.iot_info_frame .iot_stat_frame .iot_stat_body .iot_stat_measure{
+    text-align: left;
+    color: #d3d7e8;
+    font-size: 10px;
+
+}
+.iot_info_frame .iot_stat_frame .iot_stat_body .iot_stat_measure >span{
+    color: #6569ff;
+}
+
+.iot_stat_chart{
+    margin-top: 15px;
+}
+
+.wifi_info_frame{
+    /*width: 274px;*/
+    width: 350px;
+    height: auto;
+    padding: 0 18px 13px 17px;
+    border-radius: 8px;
+    color: #fdfdff;
+    position: absolute;
+    top: 0;
+    left :40px;
+    text-align: left;
+    border: 1px solid #0d0d1f;
+    background-color: #1d1f35;
+    color: #fdfdff;
+}
+
+.wifi_info_frame .wifi_info_title{
+    display: block;
+    width: 300px;
+    height: 20px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #fdfdff;
+    margin-bottom: 4px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.wifi_info_frame .title, .wifi_info_conn_Num .title{
+    width: 55px;
+    height: 18px;
+    position: absolute;
+    font-size: 12px;
+    color: #c9ccd6;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 200px;
+}
+
+.wifi_info_frame .title:before, .wifi_info_conn_Num .title:before{
+    content: '';
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    position: absolute;
+    left: -18px;
+}
+
+.wifi_info_frame .wifi_info_loca,
+.wifi_info_frame .wifi_info_conn_Num,
+.wifi_info_frame .wifi_info_data,
+.wifi_info_frame .wifi_info_disabled {
+    width: 100%;
+    height: 18px;
+    position: relative;
+    margin-bottom: 2px;
+}
+
+.wifi_info_frame .wifi_info_loca .title:before,
+.wifi_info_frame .wifi_info_conn_Num .title:before,
+.wifi_info_frame .wifi_info_data .title:before,
+.wifi_info_frame .wifi_info_disabled .title:before{
+    background-image: url("../../icon/main/marker/etc/icon_cctv_infoWindow_address.png");
+}
+
+.wifi_info_frame .info{
+    width: 300px;
+    height: 18px;
+    text-align: left;
+    font-size: 12px;
+    color: #fcfdff;
+    font-weight: 300;
+    position: absolute;
+    left: 78px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.facility_info_frame{
+    /*width: 274px;*/
+    width: 350px;
+    height: auto;
+    padding: 0px 18px 13px  17px;
+    border-radius: 8px;
+    border: 1px solid #0d0d1f;
+    background-color: #1d1f35;
+    color: #fdfdff;
+    position: absolute;
+    top: 35px;
+    left :18px;
+    text-align: left;
+}
+
+.facility_icon.fine_dust .facility_info_frame{
+    width: 264px;
+}
+
+.facility_icon.fine_dust .facility_info_frame .facility_info_loca{
+    margin: 0;
+}
+.facility_icon.fine_dust .facility_info_frame .facility_info_call{
+    display: none;
+}
+
+.facility_info_frame .facility_info_title{
+     display: block;
+     width: 330px;
+     height: 20px;
+     font-size: 14px;
+     font-weight: normal;
+     color: #fdfdff;
+     margin-bottom: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+ }
+
+.facility_info_frame .facility_info_loca{
+    width: 100%;
+    height: 18px;
+    position: relative;
+    margin-bottom: 2px;
+}
+
+.facility_info_frame .facility_info_call{
+    width: 100%;
+    height: 18px;
+    position: relative;
+}
+
+.facility_info_frame .title{
+    width: 48px;
+    height: 18px;
+    position: absolute;
+    font-size: 12px;
+    color: #c9ccd6;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.facility_info_frame .title:before{
+    content: '';
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    position: absolute;
+    left: -18px;
+}
+
+.facility_info_frame .facility_info_loca .title:before{
+    background-image: url("../../icon/main/marker/etc/icon_cctv_infoWindow_address.png");
+}
+
+.facility_info_frame .facility_info_call .title:before{
+    background-image: url("../../icon/main/marker/etc/icon_cctv_infoWindow_telephone.png");
+}
+
+.facility_info_frame .info{
+    width: 250px;
+    height: 18px;
+    text-align: left;
+    font-size: 15px;
+    color: #fcfdff;
+    font-weight: 300;
+    position: absolute;
+    left: 78px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.numbering_img{
+    width: 108px;
+    height: 86px;
+    position: absolute;
+}
+
+.numbering_img.type_event_1{
+    background-image: url("../../images/viewer/event/img_cctvNetwork_event_numbering_1.png");
+}
+
+.numbering_img.type_event_2{
+    background-image: url("../../images/viewer/event/img_cctvNetwork_event_numbering_2.png");
+}
+
+.numbering_img.type_event_3{
+    background-image: url("../../images/viewer/event/img_cctvNetwork_event_numbering_3.png");
+}
+
+.numbering_img.type_event_4{
+    background-image: url("../../images/viewer/event/img_cctvNetwork_event_numbering_4.png");
+}
+
+.numbering_img.type_event_5{
+    background-image: url("../../images/viewer/event/img_cctvNetwork_event_numbering_5.png");
+}
+
+.numbering_img.type_event_6{
+    background-image: url("../../images/viewer/event/img_cctvNetwork_event_numbering_6.png");
+}
+
+.numbering_img.type_castNet_1{
+    background-image: url("../../images/viewer/castNet/img_cctvNetwork_castNet_numbering_1.png");
+}
+
+.numbering_img.type_castNet_2{
+    background-image: url("../../images/viewer/castNet/img_cctvNetwork_castNet_numbering_2.png");
+}
+
+.numbering_img.type_castNet_3{
+    background-image: url("../../images/viewer/castNet/img_cctvNetwork_castNet_numbering_3.png");
+}
+
+.numbering_img.type_castNet_4{
+    background-image: url("../../images/viewer/castNet/img_cctvNetwork_castNet_numbering_4.png");
+}
+
+.numbering_img.type_castNet_5{
+    background-image: url("../../images/viewer/castNet/img_cctvNetwork_castNet_numbering_5.png");
+}
+
+.numbering_img.type_castNet_6{
+    background-image: url("../../images/viewer/castNet/img_cctvNetwork_castNet_numbering_6.png");
+}
+
+.search_icon{
+    width: 30px;
+    height: 40px;
+    background-image: url("../../icon/main/marker/icon_location_pointer.png");
+    background-size: contain;
+}
+
+

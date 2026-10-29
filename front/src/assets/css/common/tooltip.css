@@ -1,0 +1,31 @@
+.tooltip{
+    width: auto;
+    height: auto;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 3px 6px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 3px 6px 0 rgba(0, 0, 0, 0.12);
+    border: solid 1px #6569ff;
+    background-color: #0b0c1f;
+    color: #f7f7f7;
+    font-size: 12px;
+    position: absolute;
+    top: 26px;
+    left: -15px;
+    z-index: 1000;
+    padding: 3px 8px;
+    display: block;
+}
+
+.tooltip.clustering{
+    position:absolute;
+    left: 0;
+    width: 240px;
+    overflow: visible;
+
+}
+
+
+.leaflet-tooltip-pane{
+    z-index: 1009 !important;
+
+}

@@ -1,0 +1,200 @@
+.datepicker__wrap .datepicker {
+  display: inline-block;
+  position: relative;
+  width: 130px;
+  height: 40px;
+  border-radius: 4px;
+}
+.datepicker__wrap .datepicker__input {
+  padding: 6px 6px 6px 14px;
+  font-size: 14px;
+  color: #F7FAFF;
+  border-radius: 6px;
+  border: 1px solid #55588A;
+  background: #313254;
+}
+.datepicker__wrap .datepicker__input::placeholder {
+  color: #B7BAD4;
+}
+.datepicker__wrap .datepicker__input:hover {
+  border-color: #4646C2;
+}
+.datepicker__wrap .datepicker__input:focus {
+  border-color: #6E71FF;
+}
+.datepicker__wrap .datepicker__input:disabled {
+  opacity: 0.4;
+}
+.datepicker__wrap .datepicker__input:disabled ~ .datepicker__icon {
+  opacity: 0.4;
+}
+.datepicker__wrap .datepicker__icon {
+  position: absolute;
+  top: 50%;
+  right: 4px;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  background: url("../../image/ic/ic_calendar_default_line_normal_white_28.svg") no-repeat center/100%;
+}
+.datepicker__wrap--Range {
+  display: flex;
+  align-items: center;
+}
+.datepicker__wrap--Range .term {
+  margin: 0 5px;
+  font-size: 14px;
+  color: #B7BAD4;
+  font-weight: 500;
+}
+.datepicker__wrap .tui-datepicker {
+  top: calc(100% + 4px);
+  color: #FFF;
+  border-radius: 6px;
+  border: 1px solid #6E71FF;
+  background: #313254;
+}
+.datepicker__wrap .tui-datepicker .tui-datepicker-type-date {
+  width: 220px;
+  padding: 12px;
+}
+.datepicker__wrap .tui-calendar {
+  width: 100%;
+}
+.datepicker__wrap .tui-calendar-header {
+  border: none;
+}
+.datepicker__wrap .tui-calendar-header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 26px;
+  padding: 0;
+  margin-bottom: 10px;
+  margin-bottom: 4px;
+}
+.datepicker__wrap .tui-calendar-btn {
+  position: relative;
+  width: 24px;
+  height: 100%;
+}
+.datepicker__wrap .tui-calendar-btn::after {
+  content: "";
+  display: inline-block;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.datepicker__wrap .tui-calendar-btn.tui-open.tui-hidden {
+  pointer-events: none;
+}
+.datepicker__wrap .tui-calendar-body-inner {
+  border-spacing: 0 4px;
+  border-collapse: separate;
+}
+.datepicker__wrap .tui-calendar-body-inner:has(.tui-calendar-month-group, .tui-calendar-year-group) {
+  border-spacing: 4px 8px;
+}
+.datepicker__wrap .tui-calendar .tui-calendar-btn-prev-month.tui-hidden.tui-open::after,
+.datepicker__wrap .tui-calendar.tui-calendar-month .tui-calendar-btn-prev-year.tui-hidden.tui-open::after,
+.datepicker__wrap .tui-calendar .tui-calendar-btn-prev-year.tui-hidden.tui-open:after {
+  left: 0;
+  opacity: 0.4;
+  background-image: url("../../image/btc/btc_prev_normal_24x24.svg");
+}
+.datepicker__wrap .tui-calendar .tui-calendar-btn-prev-month::after,
+.datepicker__wrap .tui-calendar.tui-calendar-month .tui-calendar-btn-prev-year::after,
+.datepicker__wrap .tui-calendar .tui-calendar-btn-prev-year::after {
+  left: 0;
+  background-image: url("../../image/btc/btc_prev_normal_24x24.svg");
+}
+.datepicker__wrap .tui-calendar .tui-calendar-btn-prev-month:hover::after,
+.datepicker__wrap .tui-calendar.tui-calendar-month .tui-calendar-btn-prev-year:hover::after,
+.datepicker__wrap .tui-calendar .tui-calendar-btn-prev-year:hover::after {
+  left: 0;
+  background-image: url("../../image/btc/btc_prev_hover_24x24.svg");
+}
+.datepicker__wrap .tui-calendar .tui-calendar-btn-next-month.tui-hidden.tui-open::after,
+.datepicker__wrap .tui-calendar.tui-calendar-month .tui-calendar-btn-next-year.tui-hidden.tui-open::after,
+.datepicker__wrap .tui-calendar .tui-calendar-btn-next-year.tui-hidden.tui-open:after {
+  left: 0;
+  opacity: 0.4;
+  background-image: url("../../image/btc/btc_next_normal_24x24.svg");
+}
+.datepicker__wrap .tui-calendar .tui-calendar-btn-next-month::after,
+.datepicker__wrap .tui-calendar.tui-calendar-month .tui-calendar-btn-next-year::after,
+.datepicker__wrap .tui-calendar .tui-calendar-btn-next-year::after {
+  left: 0;
+  background-image: url("../../image/btc/btc_next_normal_24x24.svg");
+}
+.datepicker__wrap .tui-calendar .tui-calendar-btn-next-month:hover::after,
+.datepicker__wrap .tui-calendar.tui-calendar-month .tui-calendar-btn-next-year:hover::after,
+.datepicker__wrap .tui-calendar .tui-calendar-btn-next-year:hover::after {
+  left: 0;
+  background-image: url("../../image/btc/btc_next_hover_24x24.svg");
+}
+.datepicker__wrap .tui-calendar-body-header th {
+  height: 24px;
+  color: #B7BAD4;
+}
+.datepicker__wrap .datepicker__wrap .tui-calenda .tui-calendar th,
+.datepicker__wrap .tui-calendar td {
+  height: 28px;
+  border-radius: 50%;
+}
+.datepicker__wrap .tui-datepicker .tui-is-blocked,
+.datepicker__wrap .tui-calendar .tui-calendar-prev-month.tui-calendar-date,
+.datepicker__wrap .tui-calendar .tui-calendar-next-month.tui-calendar-date {
+  visibility: visible;
+  color: inherit;
+  opacity: 0.3;
+}
+.datepicker__wrap .tui-calendar .tui-calendar-today {
+  color: #9EA3FF;
+  border: none;
+}
+.datepicker__wrap .tui-calendar .tui-calendar-today.tui-is-selected {
+  color: #9EA3FF;
+  border: none;
+}
+.datepicker__wrap .tui-datepicker .tui-is-selectable:hover {
+  background: #484B70;
+}
+.datepicker__wrap .tui-datepicker .tui-is-selectable.tui-is-selected,
+.datepicker__wrap .tui-datepicker.tui-rangepicker .tui-is-selectable.tui-is-selected {
+  color: #FFF;
+  border-radius: 4px;
+  background-color: #6E71FF;
+}
+.datepicker__wrap .tui-datepicker .tui-is-selectable.tui-is-selected:hover,
+.datepicker__wrap .tui-datepicker.tui-rangepicker .tui-is-selectable.tui-is-selected:hover {
+  background-color: #6E71FF;
+}
+.datepicker__wrap .tui-datepicker.tui-rangepicker .tui-is-selected-range {
+  border-radius: 0;
+  background: #4646C2;
+}
+.datepicker__wrap .tui-datepicker.tui-rangepicker .tui-is-selected-range:hover {
+  background: #4646C2;
+}
+.datepicker__wrap .tui-calendar-year-group .tui-calendar th,
+.datepicker__wrap .tui-calendar-year-group .tui-calendar-year.tui-is-selectable,
+.datepicker__wrap .tui-calendar-year-group .tui-calendar-year.tui-is-selectable.tui-is-selected,
+.datepicker__wrap .tui-calendar-month-group .tui-calendar th,
+.datepicker__wrap .tui-calendar-month-group .tui-calendar-month.tui-is-selectable,
+.datepicker__wrap .tui-calendar-month-group .tui-calendar-month.tui-is-selectable.tui-is-selected {
+  width: auto;
+  height: 36px;
+  border-radius: 6px;
+}
+.datepicker__wrap .tui-hidden {
+  display: none;
+}
+.datepicker__wrap .tui-hidden.tui-open {
+  display: inline-block;
+}
+
+

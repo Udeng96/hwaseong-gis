@@ -1,0 +1,235 @@
+.cctv_viewer_container{
+    width: 483px;
+    height: 1024px;
+    background-color: #0e0f1f;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    /*-webkit-transition: right 0.8s ease;*/
+    /*transition: right 0.8s ease;*/
+    z-index: 2000;
+}
+
+.cctv_viewer_container .tab_btn:hover{
+    background: url("../../btn/main/viewer/btn_slide_right_close_hover.png") no-repeat;
+}
+
+.cctv_viewer_container .tab_btn:active{
+    background: url("../../btn/main/viewer/btn_slide_right_close_focus.png") no-repeat;
+}
+
+.cctv_viewer_container.close .tab_btn{
+    background: url("../../btn/main/viewer/btn_slide_right_open_normal.png") no-repeat;
+}
+
+.cctv_viewer_container.close{
+    right: -483px;
+}
+
+.cctv_viewer_container.close ~ .gis_area .gis_mgr_btn{
+    right: 367px;
+
+}
+
+.cctv_viewer_container.close ~ .gis_area .gis_reset_btn{
+    right: 271px;
+
+}
+
+.cctv_viewer_container.close ~ .gis_area .gis_heatmap_area{
+    right: 173px;
+}
+
+.cctv_viewer_container.close ~ .gis_area .gis_map_setting_area{
+    right: 61px;
+}
+
+.cctv_viewer_container.close ~ .gis_area .gis_func_area{
+    right: 22px;
+}
+
+.cctv_viewer_container .tab_btn{
+    width: 18px;
+    height: 42px;
+    background: url("../../btn/main/viewer/btn_slide_right_close_normal.png") no-repeat;
+    position: absolute;
+    top: 491px;
+    left: -17px;
+    z-index:1;
+}
+
+.cctv_viewer_container.close .tab_btn:hover{
+    background: url("../../btn/main/viewer/btn_slide_right_open_hover.png") no-repeat;
+}
+
+.cctv_viewer_container.close .tab_btn:active{
+    background: url("../../btn/main/viewer/btn_slide_right_open_focus.png") no-repeat;
+}
+
+.cctv_viewer_container .cctv_header {
+    width: 100%;
+    height: 105px;
+    border-bottom: 1px solid #525366;
+    background-color: #0e0f1f;
+    position: relative;
+
+}
+
+.cctv_viewer_container .cctv_header .cctv_func{
+    width: 100%;
+    height: 32px;
+    align-items: center;
+    margin-top: 26px;
+    position: absolute;
+}
+
+.cctv_viewer_container .cctv_header .cctv_func .cctv_title{
+    height: 32px;
+    color: #fff;
+    left: 60px;
+    line-height: 32px;
+    font-size: 20px;
+    font-weight: 500;
+    position: absolute;
+}
+
+.cctv_viewer_container .cctv_header .cctv_func .cctv_title:before{
+    content: '';
+    background: url("../../icon/main/viewer/icon_title_cctv.png") no-repeat;
+    width: 32px;
+    height: 32px;
+    box-sizing: border-box;
+    display: inline-block;
+    position: absolute;
+    left: -40px;
+    /*top: -9px;*/
+}
+
+.cctv_viewer_container .cctv_header .cctv_func .cctv_title span{
+    color: #4c6bf5;
+    font-size: 21px;
+    margin-left: 6px;
+}
+
+.cctv_viewer_container .cctv_header .cctv_func .func_btn_area{
+    width: 79px;
+    height: 32px;
+    position: absolute;
+    right: 9px;
+}
+
+.cctv_viewer_container .cctv_header .cctv_func .func_btn_area .btn_event_end{
+    width: 92px;
+    height: 32px;
+    font-size: 13px;
+    color: #c9c9d3;
+    border: solid 1px #484962;
+    border-radius: 5px;
+    background-color: #22233b;
+    position: absolute;
+    right: 20px;
+}
+
+.cctv_viewer_container .cctv_header .cctv_func .func_btn_area .btn_event_end:hover{
+    border: solid 1px #5c5d78;
+    background-color: #393a54;
+    color: #6569ff;
+}
+
+.cctv_viewer_container .cctv_header .cctv_func .func_btn_area .btn_event_end:disabled{
+    border: solid 1px #2c2d4b;
+    background-color: #111326;
+    color: #636482;
+    cursor: default;
+}
+
+.cctv_viewer_container .cctv_header .cctv_func .func_btn_area .btn_event_end:disabled:active{
+    border: solid 1px #2c2d4b;
+    background-color: #111326;
+    color: #636482;
+    cursor: default;
+}
+
+.cctv_viewer_container .cctv_header .cctv_func .func_btn_area .btn_event_end:active{
+    border: solid 1px #6569ff;
+    background-color: #12153b;
+}
+
+.cctv_viewer_container .cctv_header .cctv_func .func_btn_area .btn_event_end:before{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 1px;
+    height: 16px;
+    background-color: #2f313d;
+    left: -15px;
+}
+
+.cctv_viewer_container .cctv_header .cctv_func .func_btn_area .btn_reload{
+    font-size: 16px;
+    font-weight: 300;
+    color: #7e5cff;
+    height: 32px;
+    line-height: 32px;
+    margin-left: 16px;
+    position: absolute;
+}
+
+.cctv_viewer_container .cctv_header .cctv_func .func_btn_area .btn_reload:before{
+    content: '';
+    width: 14px;
+    height: 14px;
+    background: url("../../btn/main/viewer/btn_rightPanel_reload_normal.png") no-repeat;
+    display: inline-block;
+    position: absolute;
+    left: -16px;
+    top: 8px;
+}
+
+.cctv_viewer_container .cctv_header .cctv_func .func_btn_area .btn_reload:hover:before{
+    content: '';
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    position: absolute;
+    left: -16px;
+    top: 8px;
+    background: url("../../btn/main/viewer/btn_rightPanel_reload_hover.png") no-repeat;
+}
+
+.cctv_viewer_container .cctv_header .cctv_loc_text{
+    position: absolute;
+    bottom: 16px;
+    width: auto;
+    right: 0;
+    color: #c7c8c9;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: right;
+    padding-right: 21px;
+
+}
+
+.cctv_viewer_container .cctv_header .cctv_loc_text:before{
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    left: -20px;
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    background: url("../../icon/main/viewer/icon_rightPanel_address_castNet.png");
+}
+
+.cctv_viewer_container .cctv_header .cctv_loc_text.none:before{
+    background: url("../../icon/main/viewer/icon_rightPanel_address_nothing.png");
+    left: 320px;
+}
+
+.cctv_viewer_container .cctv_body{
+    width: 100%;
+    height: calc(100% - 105px);
+
+}
+

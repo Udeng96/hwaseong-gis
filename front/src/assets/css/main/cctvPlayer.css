@@ -1,0 +1,142 @@
+.cctv_player_box{
+    width: 100%;
+    height:296px;
+    position: relative;
+    float: left;
+}
+.cctv_player_box .cctv_player_header{
+    width: 482px;
+    height: 25px;
+    background-color: #322a5c;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.cctv_player_box .cctv_player_header .cctv_player_num{
+    width: 17px;
+    height: 17px;
+    border-radius: 3px;
+    background-color: #666bff;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    line-height: 1.58;
+}
+
+.cctv_player_box .cctv_player_header .cctv_player_error_icon{
+    width: 15px;
+    height: 15px;
+    background: url("../../icon/main/viewer/icon_rightPanel_video_header_cctvMini.png");
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cctv_player_box .cctv_player_header .cctv_player_title{
+    font-size: 12px;
+    color: #f7f7f7;
+    position: absolute;
+    left: 31px;
+    height: 25px;
+    line-height: 25px;
+}
+
+.cctv_player_box .cctv_player_body{
+    width: 100%;
+    height: calc(100% - 25px);
+    background-color: #070914;
+    position: absolute;
+    top: 25px;
+    border-bottom: 1px solid #525366;
+}
+
+.cctv_player_box .cctv_player_body .cctv_in{
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+.cctv_player_box .cctv_player_body .cctv_player_full_btn{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 455px;
+    top: 244px ;
+    background: url("../../btn/main/viewer/btn_rightPanel_video_expansion_normal.png");
+}
+
+.cctv_player_box .cctv_player_body .cctv_player_full_btn:hover{
+    background: url("../../btn/main/viewer/btn_rightPanel_video_expansion_hover.png");
+}
+
+.cctv_player_box .cctv_player_body .cctv_error_area{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.cctv_player_box .cctv_player_body .cctv_error_area .cctv_error_icon{
+    width: 28px;
+    height: 28px;
+    background: url("../../icon/main/viewer/icon_video_nothing.png");
+    position: absolute;
+    top: 114px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cctv_player_box .cctv_player_body .cctv_error_area .cctv_error_content{
+    font-size: 11px;
+    font-weight: 300;
+    color: #a7a8b8;
+    position: absolute;
+    top: 142px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cctv_player_box.small{
+    width: 240px;
+    height: 160px;
+    position: relative;
+    margin-right: 1px;
+    margin-top: 2px;
+}
+
+.cctv_player_box.small .cctv_player_header{
+    width: 240px;
+    height: 25px;
+    background-color: #322a5c;
+    position: absolute;
+    top: -3px;
+    left: 0;
+}
+.cctv_player_box.small .cctv_player_body .cctv_player_full_btn{
+    position: absolute;
+    left: 213px;
+    top: 108px ;
+}
+
+.cctv_player_box .cctv_player_body.small .cctv_error_area{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.cctv_player_box .cctv_player_body.small .cctv_error_area .cctv_error_content{
+    width: 130px;
+    font-size: 11px;
+    font-weight: 300;
+    color: #a7a8b8;
+    position: absolute;
+    top: 59px;
+    left: 50%;
+    transform: translateX(-50%);
+}

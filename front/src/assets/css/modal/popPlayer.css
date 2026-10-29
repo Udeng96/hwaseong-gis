@@ -1,0 +1,830 @@
+.cctv_icon.active .cctv_popup_player_box{
+    display:block;
+}
+
+.cctv_popup_player_box{
+    width: 320px;
+    height: 203px;
+    background-color: #000;
+    position: absolute;
+    z-index: 9009;
+    cursor: default;
+    top: 10px;
+    left: 45px;
+    display: block;
+}
+
+.cctv_popup_player_box .cctv_popup_player_header{
+    width: 320px;
+    height: 23px;
+    position: absolute;
+    padding: 3px 9px 3px 8px;
+    background-color: #111224;
+}
+
+.cctv_popup_player_box .cctv_event_info{
+    display: none;
+}
+
+.cctv_popup_player_box .cctv_popup_player_header .cctv_popup_player_icon{
+    width: 15px;
+    height: 15px;
+    background: url("../../icon/modal/popup/icon_cctv_pop__thumbnail_header_castNet.png");
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cctv_popup_player_box .cctv_popup_player_header .cctv_popup_player_title{
+    font-size: 11px;
+    font-weight: normal;
+    text-align: left;
+    color: #f7f7f7;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 28px;
+}
+
+.cctv_popup_player_box .cctv_popup_player_header .cctv_popup_cancel_btn{
+    width: 17px;
+    height: 17px;
+    background: url("../../btn/modal/popup/btn_cctv_pop_thumbnail_close_normal.png");
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 9px;
+}
+
+.cctv_popup_player_box .cctv_popup_player_header .cctv_popup_cancel_btn:hover{
+    background: url("../../btn/modal/popup/btn_cctv_pop_thumbnail_close_hover.png");
+}
+
+.cctv_popup_player_body{
+    position: absolute;
+    width: 100%;
+    height: 180px;
+    top: 23px;
+}
+
+.cctv_popup_player_body .cctv_player_btn_area{
+    width: 43px;
+    height: 20px;
+    position: absolute;
+    bottom: 7px;
+    right: 7px;
+}
+
+.cctv_popup_player_body .cctv_player_btn_area > button{
+    width: 20px;
+    height: 20px;
+    position: relative;
+}
+
+.cctv_popup_player_body .cctv_player_btn_area .cctv_player_2x_btn{
+    left: 0;
+    background: url("../../btn/modal/popup/btn_cctv_pop_thumbnail_x2double_normal.png");
+}
+
+.cctv_popup_player_body .cctv_player_btn_area .cctv_player_2x_btn:hover{
+    background: url("../../btn/modal/popup/btn_cctv_pop_thumbnail_x2double_hover.png");
+}
+
+.cctv_popup_player_box.double .cctv_popup_player_body .cctv_player_btn_area .cctv_player_2x_btn{
+    left: 0;
+    background: url("../../btn/modal/popup/btn_cctv_pop_x2double_contraction_normal.png");
+}
+
+.cctv_popup_player_box.double .cctv_popup_player_body .cctv_player_btn_area .cctv_player_2x_btn:hover{
+    background: url("../../btn/modal/popup/btn_cctv_pop_x2double_contraction_hover.png");
+}
+
+.cctv_popup_player_box .cctv_popup_player_body .cctv_player_btn_area .cctv_player_full_btn{
+    right: -20px;
+    background: url("../../btn/modal/popup/btn_cctv_pop_thumbnail_expansion_normal.png");
+}
+
+.cctv_popup_player_box .cctv_popup_player_body .cctv_player_btn_area .cctv_player_full_btn:hover{
+    background: url("../../btn/modal/popup/btn_cctv_pop_thumbnail_expansion_hover.png");
+}
+
+.cctv_popup_player_box .cctv_popup_player_body .cctv_in .ptz_controller{
+    width: 100%;
+    height: 180px;
+    position: absolute;
+}
+
+.cctv_popup_player_box .cctv_popup_player_body .cctv_in .ptz_controller .ptz_btn{
+    width: 36px;
+    height: 36px;
+    background-size: contain;
+    position: absolute;
+
+}
+
+.cctv_popup_player_box .cctv_popup_player_body .cctv_in .ptz_controller .ptz_up{
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url("../../btn/modal/popup/btn_cctv_pop_thumbnail_up_normal.png");
+}
+
+.cctv_popup_player_box .cctv_popup_player_body .cctv_in .ptz_controller .ptz_up:hover{
+    background: url("../../btn/modal/popup/btn_cctv_pop_thumbnail_up_hover.png");
+}
+
+.cctv_popup_player_box .cctv_popup_player_body .cctv_in .ptz_controller .ptz_right{
+    top: 50%;
+    right: 45px;
+    transform: translateY(-50%);
+    background: url("../../btn/modal/popup/btn_cctv_pop_thumbnail_right_normal.png");
+}
+
+.cctv_popup_player_box .cctv_popup_player_body .cctv_in .ptz_controller .ptz_right:hover{
+    background: url("../../btn/modal/popup/btn_cctv_pop_thumbnail_right_hover.png");
+}
+
+.cctv_popup_player_box .cctv_popup_player_body .cctv_in .ptz_controller .ptz_down{
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url("../../btn/modal/popup/btn_cctv_pop_thumbnail_down_normal.png");
+}
+
+.cctv_popup_player_box .cctv_popup_player_body .cctv_in .ptz_controller .ptz_down:hover{
+    background: url("../../btn/modal/popup/btn_cctv_pop_thumbnail_down_hover.png");
+}
+
+.cctv_popup_player_box .cctv_popup_player_body .cctv_in .ptz_controller .ptz_left{
+    top: 50%;
+    left: 45px;
+    transform: translateY(-50%);
+    background: url("../../btn/modal/popup/btn_cctv_pop_thumbnail_left_normal.png");
+}
+
+.cctv_popup_player_box .cctv_popup_player_body .cctv_in .ptz_controller .ptz_left:hover{
+    background: url("../../btn/modal/popup/btn_cctv_pop_thumbnail_left_hover.png");
+}
+
+.cctv_popup_player_box .cctv_popup_player_body .cctv_in .ptz_func_controller{
+    width: 26px;
+    height: 56px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 9px;
+}
+
+.cctv_popup_player_box .cctv_popup_player_body .cctv_in .ptz_func_controller .ptz_btn{
+    width: 26px;
+    height: 26px;
+    position: absolute;
+}
+
+.cctv_popup_player_box .cctv_popup_player_body .cctv_in .ptz_func_controller .ptz_btn.ptz_zoom_in{
+    background: url("../../btn/modal/popup/btn_cctv_pop_thumbnail_zoomIn_normal.png") no-repeat;
+    left: 0;
+    top: 0;
+}
+
+.cctv_popup_player_box .cctv_popup_player_body .cctv_in .ptz_func_controller .ptz_btn.ptz_zoom_in:hover{
+    background: url("../../btn/modal/popup/btn_cctv_pop_thumbnail_zoomIn_hover.png") no-repeat;
+}
+
+
+.cctv_popup_player_box .cctv_popup_player_body .cctv_in .ptz_func_controller .ptz_btn.ptz_zoom_out{
+    background: url("../../btn/modal/popup/btn_cctv_pop_thumbnail_zoomOut_normal.png") no-repeat;
+    left: 0;
+    bottom: 0;
+}
+
+.cctv_popup_player_box .cctv_popup_player_body .cctv_in .ptz_func_controller .ptz_btn.ptz_zoom_out:hover{
+    background: url("../../btn/modal/popup/btn_cctv_pop_thumbnail_zoomOut_hover.png") no-repeat;
+}
+
+
+.cctv_popup_player_box .cctv_popup_player_body .cctv_in.none .cctv_none_icon{
+    width: 22px;
+    height: 19px;
+    background: url("../../icon/modal/popup/error/icon_video_nothing.png") no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 69px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cctv_popup_player_box .cctv_popup_player_body .cctv_in.none p{
+    font-size: 11px;
+    font-weight: 300;
+    color: #898c8f;
+    position: absolute;
+    top: 97px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cctv_popup_player_box.double .cctv_popup_player_body .cctv_in.none .cctv_none_icon{
+    width: 28px;
+    height: 28px;
+    background: url("../../icon/modal/popup/error/icon_video_nothing.png") no-repeat;
+    position: absolute;
+    top: 138px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cctv_popup_player_box.double .cctv_popup_player_body .cctv_in.none p{
+    font-size: 12px;
+    font-weight: 300;
+    color: #898c8f;
+    position: absolute;
+    top: 182px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cctv_popup_player_box .cctv_popup_player_body .cctv_in.error .btn_reload{
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    background: url("../../btn/modal/popup/error/btn_reload_normal.png") no-repeat;
+    top: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cctv_popup_player_box .cctv_popup_player_body .cctv_in.error .btn_reload:hover{
+    background: url("../../btn/modal/popup/error/btn_reload_hover.png") no-repeat;
+}
+
+
+.cctv_popup_player_box .cctv_popup_player_body .cctv_in.error .btn_reload:before{
+    content: 'Reload';
+    display: inline-block;
+    position: absolute;
+    font-size: 10px;
+    font-weight: 300;
+    color: #666bff;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: -15px;
+}
+
+.cctv_popup_player_box .cctv_popup_player_body .cctv_in.error p{
+    width: 100%;
+    font-size: 12px;
+    font-weight: 300;
+    color: #9698a3;
+    position: absolute;
+    top: 108px;
+    text-align: center;
+}
+
+.cctv_popup_player_box.double{
+    width: 640px;
+    height: 383px;
+    background-color: #000;
+    position: absolute;
+
+}
+
+.cctv_popup_player_box.double .cctv_popup_player_header{
+    width: 640px;
+    height: 23px;
+    position: absolute;
+    padding: 3px 9px 3px 8px;
+    background-color: #111224;
+}
+
+.cctv_popup_player_box.double .cctv_event_info{
+    display: none;
+}
+
+.cctv_popup_player_box.double .cctv_popup_player_body{
+    position: absolute;
+    width: 100%;
+    height: 360px;
+    top: 23px;
+}
+
+.cctv_popup_player_box.double .cctv_popup_player_body .cctv_in .ptz_controller{
+    width: 100%;
+    height: 360px;
+    position: absolute;
+}
+
+.cctv_popup_player_box.double .cctv_popup_player_body .cctv_in .ptz_controller .ptz_up{
+    top: 23px;
+}
+
+.cctv_popup_player_box.double .cctv_popup_player_body .cctv_in .ptz_controller .ptz_right{
+    right: 71px;
+}
+
+.cctv_popup_player_box.double .cctv_popup_player_body .cctv_in .ptz_controller .ptz_down{
+    bottom: 23px;
+}
+
+.cctv_popup_player_box.double .cctv_popup_player_body .cctv_in .ptz_controller .ptz_left{
+    left: 71px;
+}
+
+
+.cctv_popup_player_box.double .cctv_popup_player_body .cctv_in .ptz_func_controller{
+    right: 18px;
+}
+
+.cctv_popup_player_box .cctv_popup_player_icon{
+    background: url("../../icon/modal/popup/icon_cctv_pop__thumbnail_header_castNet.png");
+}
+
+/*.cctv_popup_player_box.event .cctv_popup_player_icon{*/
+/*    background: url("../../icon/modal/popup/icon_cctv_pop__thumbnail_header_event.png");*/
+/*}*/
+
+.cctv_popup_player_box.event .cctv_event_info{
+    width: 320px;
+    height: 90px;
+    position: absolute;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: solid 1px #242437;
+    background-color: #151529;
+    top: 180px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.cctv_popup_player_box.event .cctv_event_info .cctv_event_stat{
+    width: 90px;
+    height: 55px;
+    background-color: rgba(255,56,243,.2);
+    margin-right: 10px;
+    text-align: center;
+    margin-top: 10px;
+    position: relative;
+}
+
+.cctv_popup_player_box.event .cctv_event_info .cctv_event_stat.month{
+    margin-right: 0;
+}
+
+.cctv_popup_player_box.event .cctv_event_info .cctv_event_stat .stat_content{
+    position:absolute;
+    width: 100%;
+    height: calc(100% - 8px);
+}
+
+.cctv_popup_player_box.event .cctv_event_info .cctv_event_stat .stat_content .stat_title{
+    font-size: 13px;
+    color: #cfd2e3;
+    font-weight: bold;
+    position: absolute;
+    top: 3px;
+    margin: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cctv_popup_player_box.event .cctv_event_info .cctv_event_stat .stat_content .stat{
+    font-size: 20px;
+    color: #f0f1f7;
+    font-weight: bold;
+    width: 100%;
+    position: absolute;
+    margin: 0;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cctv_popup_player_box.event .cctv_event_info .cctv_event_stat .stat > span{
+    font-size: 13px;
+    font-weight: normal;
+    margin-left: 2px;
+}
+
+
+.cctv_popup_player_box.event .cctv_event_info .cctv_event_stat .horizontal_line{
+    width: 90px;
+    height: 2px;
+    background-color: #666bff;
+    position: absolute;
+    right: 0;
+    bottom: 6px;
+}
+
+.cctv_popup_player_box.event .cctv_event_info .notice{
+    position: absolute;
+    width: auto;
+    height: 17px;
+    font-size: 11px;
+    font-weight: 300;
+    color: #a5a5b0;
+    margin: 0;
+    bottom: 6px;
+    right: 0;
+    padding: 2px 17px 0 17px;
+    text-align: right;
+}
+
+
+.cctv_popup_player_box.event.double .cctv_event_info{
+    width: 640px;
+    height: 100px;
+    position: absolute;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: solid 1px #242437;
+    background-color: #151529;
+    top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.cctv_popup_player_box.event.double .cctv_event_info .cctv_event_stat{
+    width: 194px;
+    height: 64px;
+    background-color: rgba(255,56,243,.2);
+    margin-right: 12px;
+    text-align: center;
+    margin-top: 10px;
+    position: relative;
+}
+
+.cctv_popup_player_box.event.double .cctv_event_info .cctv_event_stat .stat_content{
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 8px);
+    text-align: center;
+
+}
+
+
+.cctv_popup_player_box.event.double .cctv_event_info .cctv_event_stat .stat_content .stat_title{
+    font-size: 13px;
+    color: #cfd2e3;
+    font-weight: bold;
+    position: absolute;
+    bottom: 1px;
+    margin: 0;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cctv_popup_player_box.event.double .cctv_event_info .cctv_event_stat .stat{
+    font-size: 20px;
+    color: #f0f1f7;
+    font-weight: bold;
+    width: 100%;
+    position: absolute;
+    margin: 0;
+    top: 21px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cctv_popup_player_box.event.double .cctv_event_info .cctv_event_stat .horizontal_line{
+    width: 194px;
+    height: 2px;
+    background-color: #666bff;
+    position: absolute;
+    left: 0;
+    bottom: 8px;
+}
+
+.cctv_popup_player_header{
+    width: 100%;
+    height: 56px;
+    position: absolute;
+    padding: 9px 23px 9px 15px;
+    background-color: #111224;
+}
+
+.cctv_popup_player_header .cctv_popup_player_icon{
+    width: 30px;
+    height: 30px;
+    background: url("../../icon/modal/popup/icon_cctv_pop_fullScreen_header_castNet.png");
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cctv_popup_player_header .cctv_popup_player_title{
+    font-size: 20px;
+    font-weight: normal;
+    text-align: left;
+    color: #f7f7f7;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 57px;
+}
+
+.cctv_popup_player_header .cctv_popup_cancel_btn{
+    width: 38px;
+    height: 38px;
+    background: url("../../btn/modal/popup/full/btn_cctv_pop_fullScreen_close_normal.png");
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 23px;
+}
+
+.cctv_popup_player_header .cctv_popup_cancel_btn:hover{
+    background: url("../../btn/modal/popup/full/btn_cctv_pop_fullScreen_close_hover.png");
+}
+
+.cctv_popup_player_box.full{
+    width: 1920px;
+    height: 1080px;
+    /*background-color: #fff;*/
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 8000;
+}
+
+.cctv_popup_player_box.full .cctv_in{
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.cctv_popup_player_box.full .cctv_popup_player_header{
+    width: 100%;
+    height: 56px;
+    position: absolute;
+    top: 0;
+    z-index: 9999;
+
+}
+
+.cctv_popup_player_box.full .cctv_popup_player_header .cctv_popup_player_icon{
+    width: 30px;
+    height: 30px;
+    background: url("../../icon/modal/popup/icon_cctv_pop_fullScreen_header_castNet.png") no-repeat;
+    position: absolute;
+    left: 15px;
+}
+
+.cctv_popup_player_box.event.full .cctv_popup_player_header .cctv_popup_player_icon{
+    background: url("../../icon/modal/popup/icon_cctv_pop_fullScreen_header_event.png") no-repeat;
+}
+
+.cctv_popup_player_box.full .cctv_popup_player_header .cctv_popup_player_title{
+    font-size: 20px;
+    font-weight: normal;
+    color: #f7f7f7;
+    position: absolute;
+    left: 57px;
+    bottom: 14px;
+}
+
+.cctv_popup_player_box.full .cctv_popup_player_header .cctv_popup_cancel_btn{
+    width: 38px;
+    height: 38px;
+    background: url("../../btn/modal/popup/full/btn_cctv_pop_fullScreen_close_normal.png");
+    position: absolute;
+    right: 23px;
+}
+
+.cctv_popup_player_box.full .cctv_popup_player_header .cctv_popup_cancel_btn:hover{
+    background: url("../../btn/modal/popup/full/btn_cctv_pop_fullScreen_close_hover.png");
+}
+
+
+.cctv_popup_player_box.full .cctv_popup_player_body{
+    width: 100%;
+    height: 1000px;
+    position: absolute;
+    left: 0;
+    top: 56px;
+    /*background-color: #26285c;*/
+}
+
+.cctv_popup_player_box.full .cctv_popup_player_body .cctv_in .ptz_controller{
+    width: 100%;
+    height: 1024px;
+    position: absolute;
+}
+
+.cctv_popup_player_box.full .cctv_popup_player_body .cctv_in .ptz_controller .ptz_btn{
+    width: 36px;
+    height: 36px;
+    background-size: contain;
+    position: absolute;
+
+}
+
+.cctv_popup_player_box.full .cctv_popup_player_info_area{
+    display: none;
+}
+
+.cctv_popup_player_box.full .cctv_full_event_info{
+    display: none;
+}
+
+.cctv_popup_player_box.event.full .cctv_popup_player_info_area{
+    width: 100%;
+    height: 24px;
+    background-color: #111224;
+    border-radius: 8px 8px 0 0;
+    position: absolute;
+    bottom: 0;
+    opacity: .5;
+    cursor:pointer;
+    display: block;
+}
+
+.cctv_popup_player_box.event.full .cctv_popup_player_info_area:hover .cctv_popup_player_info_btn{
+    background: url("../../btn/modal/popup/full/btn_cctv_pop_fullScreen_upArrow_hover.png");
+}
+
+.cctv_popup_player_box.event.full .cctv_popup_player_info_btn{
+    width: 20px;
+    height: 13px;
+    background: url("../../btn/modal/popup/full/btn_cctv_pop_fullScreen_upArrow_normal.png");
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.cctv_popup_player_box.event.full .cctv_popup_player_info_area.active{
+    bottom: 138px;
+    z-index:9000;
+}
+
+.cctv_popup_player_info_area.active ~ .cctv_in{
+    display: none;
+}
+
+.cctv_popup_player_box.full .cctv_popup_player_info_area ~ .cctv_full_event_info{
+    display: none;
+}
+
+.cctv_popup_player_box.full .cctv_popup_player_info_area.active ~ .cctv_full_event_info{
+    width: 100%;
+    height: 138px;
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(17,18,36,.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cctv_popup_player_box.full .cctv_popup_player_info_area.active ~ .cctv_full_event_info .notice{
+    position: absolute;
+    top: 10px;
+    right: 48px;
+    color: #a5a5b0;
+
+}
+
+.cctv_popup_player_box.full .cctv_popup_player_info_area.active ~ .cctv_full_event_info .cctv_full_event_stat{
+    width: 596px;
+    height: 84px;
+    background-color: rgba(255,56,243,.2);
+    margin-right: 18px;
+    padding: 8px 0 18px 0;
+    text-align: center;
+    position: relative;
+}
+
+.cctv_popup_player_box.full .cctv_popup_player_info_area.active ~ .cctv_full_event_info .cctv_full_event_stat.month{
+    margin-right: 0;
+}
+
+.cctv_popup_player_box.full .cctv_popup_player_info_area.active ~ .cctv_full_event_info .cctv_full_event_stat .full_stat_title{
+    font-size: 15px;
+    font-weight: normal;
+    color: #cfd2e3;
+}
+
+.cctv_popup_player_box.full .cctv_popup_player_info_area.active ~ .cctv_full_event_info .cctv_full_event_stat .full_stat{
+    font-size: 27px;
+    color: #f0f1f7;
+    font-weight: bold;
+    margin-top: 7px;
+}
+
+.cctv_popup_player_box.full .cctv_popup_player_info_area.active ~ .cctv_full_event_info .cctv_full_event_stat .full_stat > span{
+    font-size: 16px;
+    color: #cfd2e3;
+    font-weight: normal;
+    text-align: center;
+}
+
+.cctv_popup_player_box.full .cctv_popup_player_info_area.active ~ .cctv_full_event_info .cctv_full_event_stat .horizontal_line{
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 12px;
+    background-color: #666bff;
+}
+
+.cctv_popup_player_box.full .cctv_popup_player_info_area.active .cctv_popup_player_info_btn{
+    background: url("../../btn/modal/popup/full/btn_cctv_pop_fullScreen_downArrow_normal.png");
+}
+
+.cctv_popup_player_box.full .cctv_popup_player_info_area.active:hover .cctv_popup_player_info_btn{
+    background: url("../../btn/modal/popup/full/btn_cctv_pop_fullScreen_downArrow_hover.png") ;
+}
+
+
+.cctv_popup_player_box.full .cctv_popup_player_body .cctv_in .ptz_controller .ptz_btn{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.cctv_popup_player_box.full .cctv_popup_player_body .cctv_in .ptz_controller .ptz_up{
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url("../../btn/modal/popup/full/btn_cctv_pop_fullScreen_up_normal.png");
+}
+
+.cctv_popup_player_box.full .cctv_popup_player_body .cctv_in .ptz_controller .ptz_up:hover{
+    background: url("../../btn/modal/popup/full/btn_cctv_pop_fullScreen_up_hover.png");
+}
+
+.cctv_popup_player_box.full .cctv_popup_player_body .cctv_in .ptz_controller .ptz_right{
+    top: 50%;
+    right: 143px;
+    transform: translateY(-50%);
+    background: url("../../btn/modal/popup/full/btn_cctv_pop_fullScreen_right_normal.png");
+}
+
+.cctv_popup_player_box.full .cctv_popup_player_body .cctv_in .ptz_controller .ptz_right:hover{
+    background: url("../../btn/modal/popup/full/btn_cctv_pop_fullScreen_right_hover.png");
+}
+
+.cctv_popup_player_box.full .cctv_popup_player_body .cctv_in .ptz_controller .ptz_down{
+    bottom: 82px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url("../../btn/modal/popup/full/btn_cctv_pop_fullScreen_down_normal.png");
+}
+
+.cctv_popup_player_box.full .cctv_popup_player_body .cctv_in .ptz_controller .ptz_down:hover{
+    background: url("../../btn/modal/popup/full/btn_cctv_pop_fullScreen_down_hover.png");
+}
+
+.cctv_popup_player_box.full .cctv_popup_player_body .cctv_in .ptz_controller .ptz_left{
+    top: 50%;
+    left: 143px;
+    transform: translateY(-50%);
+    background: url("../../btn/modal/popup/full/btn_cctv_pop_fullScreen_left_normal.png");
+}
+
+.cctv_popup_player_box.full .cctv_popup_player_body .cctv_in .ptz_controller .ptz_left:hover{
+    background: url("../../btn/modal/popup/full/btn_cctv_pop_fullScreen_left_hover.png");
+}
+
+.cctv_popup_player_box.full .cctv_popup_player_body .cctv_in .ptz_func_controller{
+    width: 70px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-45%);
+    right: 35px;
+}
+
+.cctv_popup_player_box.full .cctv_popup_player_body .cctv_in .ptz_func_controller .ptz_btn{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+}
+
+.cctv_popup_player_box.full .cctv_popup_player_body .cctv_in .ptz_func_controller .ptz_btn.ptz_zoom_in{
+    background: url("../../btn/modal/popup/full/btn_cctv_pop_fullScreen_zoomIn_normal.png") no-repeat;
+    left: 0;
+    top: 0;
+}
+
+.cctv_popup_player_box.full .cctv_popup_player_body .cctv_in .ptz_func_controller .ptz_btn.ptz_zoom_in:hover{
+    background: url("../../btn/modal/popup/full/btn_cctv_pop_fullScreen_zoomIn_hover.png") no-repeat;
+}
+
+
+.cctv_popup_player_box.full .cctv_popup_player_body .cctv_in .ptz_func_controller .ptz_btn.ptz_zoom_out{
+    background: url("../../btn/modal/popup/full/btn_cctv_pop_fullScreen_zoomOut_normal.png") no-repeat;
+    left: 0;
+    bottom: 0;
+}
+
+.cctv_popup_player_box.full .cctv_popup_player_body .cctv_in .ptz_func_controller .ptz_btn.ptz_zoom_out:hover{
+    background: url("../../btn/modal/popup/full/btn_cctv_pop_fullScreen_zoomOut_hover.png") no-repeat;
+}

@@ -1,0 +1,106 @@
+.scroll{
+    width: 468px;
+    height: 100%;
+    overflow: visible;
+}
+
+.scroll.tree{
+    height: 475px;
+    overflow: hidden;
+}
+
+.scroll.cctv_cluster{
+    height: 288px;
+    width: 240px;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.scroll.cctv_cluster .ScrollbarsCustom-Scroller{
+    height: 288px;
+    width: 240px !important;
+    cursor: default;
+    padding: 0 !important;
+    margin: 0 !important;
+
+}
+
+.scroll.cctv_cluster .ScrollbarsCustom-Content{
+    height: 288px !important;
+    position: absolute;
+    transition: none !important;
+    width: 100% !important;
+    left: 0;
+    padding: 0 !important;
+}
+
+.scroll.cctv_cluster .ScrollbarsCustom-Track{
+    right: 0 !important;
+    top: 0 !important;
+    height: 288px !important;
+}
+.ScrollbarsCustom{
+    overflow: visible !important;
+    position: relative !important;
+}
+
+.ScrollbarsCustom.scroll.tree{
+    overflow: visible !important;
+    position: relative !important;
+    box-sizing: border-box !important;
+}
+
+.scroll.tree .ScrollbarsCustom-Scroller{
+    margin-bottom: 0 !important;
+}
+
+.ScrollbarsCustom-Scroller::-webkit-scrollbar{
+    display: none;
+}
+
+.ScrollbarsCustom-Wrapper{
+    overflow: visible !important;
+}
+
+.ScrollbarsCustom-Content{
+    width: 468px !important;
+    height:100%;
+    overflow: visible !important;
+    box-sizing: border-box !important;
+}
+
+
+.ScrollbarsCustom-TrackX{
+    display: none;
+}
+
+.ScrollbarsCustom-Thumb{
+    width: 4px !important;
+    border-radius: 2px !important;
+    background: #5c5f82 !important;
+    overflow: visible !important;
+}
+
+.ScrollbarsCustom-Thumb:hover{
+    background: #787baf !important;
+
+}
+
+.ScrollbarsCustom-Track{
+    background: rgba(235,242,245,.1) !important;
+    width: 4px !important;
+    overflow: visible !important;
+    border-radius: 2px !important;
+    position: absolute !important;
+    right: 4px !important;
+}
+
+.scroll.tree .ScrollbarsCustom-Track{
+    top: 0 !important;
+    height: 475px !important;
+    right: 5px!important;
+}
+
+

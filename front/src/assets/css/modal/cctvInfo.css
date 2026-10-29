@@ -1,0 +1,292 @@
+.modal_cctv_info{
+    display: none;
+}
+
+.modal_cctv_info.active{
+    display: block;
+    position: absolute;
+    top: 56px;
+    left: 554px;
+    width: 1366px;
+    height: 1024px;
+    z-index: 2001;
+    background-color: #131429;
+    padding: 0 36px 40px 48px;
+}
+
+.modal_cctv_info.active ~ .gis_area .gis_search_area{
+    display: none;
+}
+
+.modal_cctv_info_header{
+    width: 100%;
+    height: 90px;
+    position: relative;
+}
+
+.modal_cctv_info_header .modal_cctv_info_title{
+    font-size: 22px;
+    font-weight: normal;
+    color: #f0f1f7;
+    position: absolute;
+    left: 34px;
+    top: 25px;
+}
+
+.modal_cctv_info_header .modal_cctv_info_title:before{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: -34px;
+    top: -4px;
+    width: 26px;
+    height: 26px;
+    background: url("../../icon/modal/cctvInfo/icon_cctvTab_title_cctv_infoEdit.png");
+}
+
+.modal_cctv_info_header .modal_cctv_info_title:before:hover{
+    background: url("../../icon/modal/cctvInfo/icon_cctvTab_title_cctv_infoEdit.png");
+}
+
+.modal_cctv_info_header .close_modal_btn{
+    width: 32px;
+    height: 32px;
+    background: url("../../btn/modal/cctvInfo/btn_cctvTab_slideWindow_close_normal.png");
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+
+.modal_cctv_info_header .close_modal_btn:hover{
+    background: url("../../btn/modal/cctvInfo/btn_cctvTab_slideWindow_close_hover.png");
+}
+
+
+.modal_cctv_info_body{
+    display: inline-block;
+    width: 100%;
+    height: 892px;
+    position: relative;
+}
+
+.modal_cctv_info_body .modal_cctv_info_frame{
+    width: 484px;
+    height: 828px;
+    position: absolute;
+    border-top: 1px solid #232540;
+    border-bottom: 1px solid #232540;
+    padding-top: 34px;
+    padding-bottom: 34px;
+}
+
+.modal_cctv_info_body .modal_cctv_info_frame .modal_cctv_info_item{
+    width: 100%;
+    height: 38px;
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.modal_cctv_info_body .modal_cctv_info_frame .modal_cctv_info_item.large{
+    height: 60px;
+}
+
+.modal_cctv_info_body .modal_cctv_info_frame .modal_cctv_info_item .info_latlng,
+.modal_cctv_info_body .modal_cctv_info_frame .modal_cctv_info_item .info_latlng:read-only{
+
+    width: 382px;
+    height: 38px;
+    padding: 9px 0 9px 15px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 6px;
+    color: #edeeff;
+}
+
+.modal_cctv_info_body .modal_cctv_info_frame .modal_cctv_info_item .info_label_lat,
+.modal_cctv_info_body .modal_cctv_info_frame .modal_cctv_info_item .info_label_lat:read-only{
+
+    font-size: 13px;
+    font-weight: 300;
+    height: 38px;
+    line-height: 38px;
+    color: #edeeff;
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.modal_cctv_info_body .modal_cctv_info_frame .modal_cctv_info_item .info_label_lng,
+.modal_cctv_info_body .modal_cctv_info_frame .modal_cctv_info_item .info_label_lng:read-only{
+    font-size: 13px;
+    font-weight: 300;
+    height: 38px;
+    line-height: 38px;
+    color: #edeeff;
+    position: absolute;
+    display: inline-block;
+    left: 204px;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.modal_cctv_info_body .modal_cctv_info_frame .modal_cctv_info_item .info.small_lat,
+.modal_cctv_info_body .modal_cctv_info_frame .modal_cctv_info_item .info.small_lat:read-only{
+    width: 146px;
+    padding: 0 0 0 7px;
+    margin: 0;
+    left: 32px;
+    top: 0;
+    display: inline-block;
+}
+
+.modal_cctv_info_body .modal_cctv_info_frame .modal_cctv_info_item .info.small_lng,
+.modal_cctv_info_body .modal_cctv_info_frame .modal_cctv_info_item .info.small_lng:read-only{
+    width: 146px;
+    padding: 0 0 0 7px;
+    margin: 0;
+    right: 0;
+    top: 0;
+    display: inline-block;
+}
+
+.modal_cctv_info_body .modal_cctv_info_frame .modal_cctv_info_item .modal_cctv_info_title{
+    width: 102px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 13px;
+    font-weight: normal;
+    text-align: left;
+    color: #b3b7c9;
+    position: absolute;
+}
+
+.modal_cctv_info_body .modal_cctv_info_frame .modal_cctv_info_item .modal_cctv_info_title > span{
+    font-size: 15px;
+    font-weight: 300;
+    color: #e64e5c;
+}
+
+
+.modal_cctv_info_body .modal_cctv_info_frame .modal_cctv_info_item .info:read-only{
+    width: 382px;
+    height: 38px;
+    line-height: 38px;
+    padding: 9px 0 9px 15px;
+    border-radius: 6px;
+    border: solid 1px #2c2e4a;
+    background-color: #131429;
+    position: absolute;
+    right: 0;
+    font-size: 14px;
+    color: #edeeff;
+}
+
+.modal_cctv_info_body .modal_cctv_info_frame .modal_cctv_info_item .info{
+    width: 382px;
+    height: 38px;
+    padding: 9px 0 9px 15px;
+    background-color: #0e0f1f;
+    border: solid 1px #2c2e4a;
+    position: absolute;
+    border-radius: 6px;
+    right: 0;
+    font-size: 14px;
+    color: #edeeff;
+}
+
+
+.modal_cctv_info_body .modal_cctv_info_frame .modal_cctv_info_item.large .info{
+    height: 60px;
+    line-height: 1.5;
+    padding-top: 7px;
+}
+
+.modal_cctv_map_frame{
+    width: 774px;
+    height: 828px;
+    position: absolute;
+    right: 0;
+}
+
+.modal_cctv_map_frame p{
+    font-size: 11px;
+    font-weight: 300;
+    color: #a5a5b0;
+    position: relative;
+    left: 21px;
+    top: 0.5px;
+    margin-bottom: 9px;
+}
+
+.modal_cctv_map_frame p:before{
+    content: '';
+    width: 11px;
+    height:11px;
+    display: inline-block;
+    background: url("../../icon/modal/cctvInfo/info_FILL0_wght400_GRAD0_opsz48.png") no-repeat;
+    background-size: contain;
+    position: absolute;
+    filter: invert(75%) sepia(13%) saturate(162%) hue-rotate(201deg) brightness(87%) contrast(90%);
+    left: -16px;
+}
+
+.modal_cctv_map_frame .modal_cctv_map{
+    width: 774px;
+    height: 806px;
+    border: 1px solid white;
+    border-radius: 6px;
+}
+
+.modal_cctv_map_frame .modal_cctv_info_btn{
+    width: 164px;
+    height: 38px;
+    position: absolute;
+    right: 0;
+    margin-top: 24px;
+}
+
+.modal_cctv_map_frame .modal_cctv_info_btn .cancel_btn{
+    width: 78px;
+    height: 38px;
+    border-radius: 6px;
+    border: solid 1px #3a3d59;
+    background-color: #26283f;
+    text-align: center;
+    font-size: 14px;
+    line-height: 38px;
+    color: #f6f6f6;
+    position: absolute;
+    left: 0;
+}
+
+.modal_cctv_map_frame .modal_cctv_info_btn .transform_btn{
+    width: 78px;
+    height: 38px;
+    line-height: 38px;
+    border-radius: 6px;
+    border: solid 1px #5f64fa;
+    background-color: #5458e8;
+    text-align: center;
+    font-size: 14px;
+    color: #f6f6f6;
+    position: absolute;
+    right: 0;
+}
+
+.modal_cctv_map_frame .modal_cctv_info_btn .cancel_btn:hover{
+    border: solid 1px #424566;
+    background-color: #32344c;
+
+}
+
+.modal_cctv_map_frame .modal_cctv_info_btn .transform_btn:hover{
+    border: solid 1px #7d8aff;
+    background-color: #666bff;
+
+}

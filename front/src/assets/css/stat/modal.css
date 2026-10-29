@@ -1,0 +1,81 @@
+
+
+.stat_modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 250ms;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.4);
+}
+.stat_modal.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 350ms 350ms, opacity 350ms;
+}
+.stat_modal.confirm .stat_modal__content {
+  width: 408px;
+  background-color: #26283F;
+}
+.stat_modal__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  border-radius: 16px;
+  border: 1px solid #484B70;
+  overflow: hidden;
+}
+.stat_modal__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+  padding: 0 24px;
+  border-bottom: solid 1px #484B70;
+  background-color: #26283F;
+}
+.stat_modal__body {
+  display: flex;
+  min-height: 108px;
+}
+.stat_modal__footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0 10px;
+  padding: 14px 24px;
+  border-top: 1px solid #484B70;
+}
+.stat_modal__title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #FFF;
+}
+.stat_modal__message {
+  min-height: 108px;
+  padding: 24px;
+  font-size: 16px;
+  color: #FFF;
+}
+.stat_modal .btn__close {
+  width: 32px;
+  height: 32px;
+  border-radius: 5px;
+  background: url("../../../assets/btn/stat/btc_close_normal_32x32.svg") no-repeat center/100%;
+}
+.stat_modal .btn__close:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.stat_modal .btn-normal {
+  width: 86px;
+}
+.stat_modal .btn-primary {
+  width: 86px;
+}
+
+
